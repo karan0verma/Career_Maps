@@ -18,6 +18,7 @@ interface Company {
   company_type: string;
   city: string;
   country: string;
+  logo_url?: string;
   total_active_jobs?: number;
 }
 
