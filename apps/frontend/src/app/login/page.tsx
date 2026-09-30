@@ -178,13 +178,17 @@ export default function LoginPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 flex justify-center">
-                  <GoogleLogin
-                    onSuccess={handleGoogleSuccess}
-                    onError={() => setError('Google Login Failed')}
-                    theme="outline"
-                    width="384"
-                  />
+                <div className="mt-6 flex justify-center w-full">
+                  <div className="w-full max-w-[320px] flex justify-center">
+                    <GoogleLogin
+                      onSuccess={handleGoogleSuccess}
+                      onError={() => setError('Google Login Failed')}
+                      theme="outline"
+                      size="large"
+                      text="continue_with"
+                      shape="rectangular"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
