@@ -28,10 +28,11 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
         <div className="w-full flex flex-col min-h-screen">
           {/* Top Header with 3-Line Hamburger Menu */}
-          <header className="flex flex-col sm:flex-row h-auto sm:h-[84px] py-2 sm:py-0 items-center justify-between px-2 sm:px-8 border-b border-gray-200/80 bg-white/80 backdrop-blur-md sticky top-0 z-30 shadow-xs gap-2 sm:gap-0">
+          <header className="flex flex-col py-2 px-2 sm:px-6 sm:py-3 border-b border-gray-200/80 bg-white/80 backdrop-blur-md sticky top-0 z-30 shadow-xs gap-2">
             
-            <div className="w-full sm:w-auto flex items-center justify-between sm:justify-start gap-3 sm:gap-4 shrink-0">
-              <div className="flex items-center gap-2">
+            {/* Top Row: Logo and Profile */}
+            <div className="w-full flex items-center justify-between shrink-0">
+              <div className="flex items-center gap-2 sm:gap-4">
                 {/* 3-Line Hamburger Menu Button */}
                 <button
                   onClick={() => setIsSidebarOpen(true)}
@@ -49,16 +50,21 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                 </Link>
               </div>
 
-              {/* Right Profile Info - Mobile Only */}
-              <div className="flex sm:hidden items-center gap-3 shrink-0">
-                <Link href="/profile/saved" className={`p-1.5 rounded-xl hover:bg-gray-100 ${pathname === '/profile/saved' ? 'text-orange-600' : 'text-gray-500'}`}>
+              {/* Right Profile Info */}
+              <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+                <Link 
+                  href="/profile/saved"
+                  className={`transition-colors p-1.5 sm:p-2 rounded-xl hover:bg-gray-100 ${pathname === '/profile/saved' ? 'text-orange-600' : 'text-gray-500 hover:text-gray-700'}`}
+                  title="Saved Jobs"
+                >
                   <Bookmark className="h-5 w-5" fill={pathname === '/profile/saved' ? 'currentColor' : 'none'} />
                 </Link>
-                <Link href="/profile" className="flex items-center gap-2 cursor-pointer">
+                
+                <Link href="/profile" className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
                   {user?.profile_image ? (
-                    <img src={user.profile_image} alt="" className="h-7 w-7 rounded-full bg-gray-200 object-cover shadow-xs" />
+                    <img src={user.profile_image} alt="" className="h-7 w-7 sm:h-8 sm:w-8 rounded-full bg-gray-200 object-cover shadow-xs" />
                   ) : (
-                    <div className="h-7 w-7 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-[10px] shrink-0 border border-orange-200">
+                    <div className="h-7 w-7 sm:h-8 sm:w-8 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-[10px] sm:text-xs shrink-0 border border-orange-200">
                       {user?.name?.charAt(0) || user?.email?.charAt(0) || 'U'}
                     </div>
                   )}
@@ -66,30 +72,9 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
 
-            {/* Live Ticker in Center of Header - Full width on Mobile */}
-            <div className="w-full sm:flex-1 sm:px-4 order-last sm:order-none min-w-0 overflow-hidden mt-1 sm:mt-0">
+            {/* Live Ticker in Center of Header - Full width on all devices */}
+            <div className="w-full min-w-0 overflow-hidden">
               <HeaderLiveTicker />
-            </div>
-
-            {/* Right Profile Info - Desktop Only */}
-            <div className="hidden sm:flex items-center gap-3 sm:gap-5 shrink-0">
-              <Link 
-                href="/profile/saved"
-                className={`transition-colors p-2 rounded-xl hover:bg-gray-100 ${pathname === '/profile/saved' ? 'text-orange-600' : 'text-gray-500 hover:text-gray-700'}`}
-                title="Saved Jobs"
-              >
-                <Bookmark className="h-5 w-5" fill={pathname === '/profile/saved' ? 'currentColor' : 'none'} />
-              </Link>
-              
-              <Link href="/profile" className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
-                {user?.profile_image ? (
-                  <img src={user.profile_image} alt="" className="h-8 w-8 rounded-full bg-gray-200 object-cover shadow-xs" />
-                ) : (
-                  <div className="h-8 w-8 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xs shrink-0 border border-orange-200">
-                    {user?.name?.charAt(0) || user?.email?.charAt(0) || 'U'}
-                  </div>
-                )}
-              </Link>
             </div>
           </header>
 

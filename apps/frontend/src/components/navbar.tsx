@@ -16,10 +16,11 @@ export function Navbar({ onOpenMenu }: NavbarProps) {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-gray-200 bg-white/85 backdrop-blur-md shadow-xs">
-      <div className="container mx-auto flex flex-col sm:flex-row h-auto sm:h-20 py-2 sm:py-0 items-center justify-between px-2 sm:px-6 gap-2 sm:gap-0">
+      <div className="container mx-auto flex flex-col py-2 sm:py-3 px-2 sm:px-6 gap-2">
         
-        <div className="w-full sm:w-auto flex items-center justify-between sm:justify-start gap-2 sm:gap-4 shrink-0">
-          <div className="flex items-center gap-2">
+        {/* Top Row: Logo & Buttons */}
+        <div className="w-full flex items-center justify-between shrink-0">
+          <div className="flex items-center gap-2 sm:gap-4">
             {/* 3-Line Hamburger Menu Button */}
             <button
               onClick={onOpenMenu}
@@ -37,14 +38,17 @@ export function Navbar({ onOpenMenu }: NavbarProps) {
             </Link>
           </div>
 
-          {/* Right items on mobile */}
-          <div className="flex sm:hidden items-center gap-2 shrink-0">
+          {/* Right items */}
+          <div className="flex items-center gap-2 shrink-0">
             {isLoggedIn ? (
               <>
+                <Link href="/profile/saved" className="hidden sm:block text-sm font-medium text-gray-600 hover:text-orange-600 transition-colors">
+                  Saved Jobs
+                </Link>
                 <Link href="/profile" className={buttonVariants({ variant: "outline", size: "sm" })}>
                   Profile
                 </Link>
-                <Button variant="ghost" size="sm" onClick={logout} className="px-2">
+                <Button variant="ghost" size="sm" onClick={logout} className="px-2 sm:px-4">
                   Log Out
                 </Button>
               </>
@@ -53,7 +57,7 @@ export function Navbar({ onOpenMenu }: NavbarProps) {
                 <Link href="/login" className={buttonVariants({ variant: "ghost", size: "sm" })}>
                   Log In
                 </Link>
-                <Link href="/register" className="bg-orange-600 hover:bg-orange-700 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-xs transition">
+                <Link href="/register" className="bg-orange-600 hover:bg-orange-700 text-white text-[11px] sm:text-sm font-bold px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-xs transition">
                   Sign Up
                 </Link>
               </>
@@ -61,35 +65,9 @@ export function Navbar({ onOpenMenu }: NavbarProps) {
           </div>
         </div>
 
-        {/* Live Ticker in Navbar (Full width on mobile) */}
-        <div className="w-full sm:flex-1 sm:px-4 order-last sm:order-none min-w-0 overflow-hidden mt-1 sm:mt-0">
+        {/* Bottom Row: Live Ticker (Full width on all devices) */}
+        <div className="w-full min-w-0 overflow-hidden">
           <HeaderLiveTicker />
-        </div>
-
-        {/* Right items on Desktop */}
-        <div className="hidden sm:flex items-center gap-2 md:gap-3 shrink-0">
-          {isLoggedIn ? (
-            <>
-              <Link href="/profile/saved" className="text-sm font-medium text-gray-600 hover:text-orange-600 transition-colors hidden md:block">
-                Saved Jobs
-              </Link>
-              <Link href="/profile" className={buttonVariants({ variant: "outline", size: "sm" })}>
-                Profile
-              </Link>
-              <Button variant="ghost" size="sm" onClick={logout}>
-                Log Out
-              </Button>
-            </>
-          ) : (
-            <>
-              <Link href="/login" className={buttonVariants({ variant: "ghost", size: "sm" })}>
-                Log In
-              </Link>
-              <Link href="/register" className="bg-orange-600 hover:bg-orange-700 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-xl shadow-xs transition">
-                Sign Up
-              </Link>
-            </>
-          )}
         </div>
       </div>
     </header>

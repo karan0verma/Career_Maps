@@ -28,7 +28,7 @@ export function Hero({ jobCount, companyCount }: HeroProps) {
   };
 
   return (
-    <div className="relative overflow-hidden bg-[#FDFBF7] pt-24 pb-20 border-b border-gray-100">
+    <div className="relative overflow-hidden bg-[#FDFBF7] pt-8 sm:pt-24 pb-6 sm:pb-20 border-b border-gray-100">
       {/* Decorative background blobs */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
