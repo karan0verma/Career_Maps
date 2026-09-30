@@ -45,7 +45,7 @@ export function HeaderLiveTicker() {
   }, []);
 
   return (
-    <div className="flex-1 w-full max-w-5xl lg:max-w-6xl mx-1 sm:mx-4 md:mx-6 overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-950/95 via-slate-900 to-amber-950/95 text-white border border-orange-500/40 shadow-lg shadow-orange-950/20 h-10 sm:h-12 flex items-center px-2 sm:px-4 backdrop-blur-md">
+    <div className="flex-1 w-full max-w-5xl lg:max-w-6xl mx-auto overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-950/95 via-slate-900 to-amber-950/95 text-white border border-orange-500/40 shadow-lg shadow-orange-950/20 h-10 sm:h-12 flex items-center px-2 sm:px-4 backdrop-blur-md">
       {/* Left Static Badge with Pulsing Emerald Dot */}
       <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 pr-2 sm:pr-4 border-r border-orange-500/30">
         <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
