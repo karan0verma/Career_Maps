@@ -10,3 +10,7 @@ structlog==24.1.0
 sqladmin[full]==0.17.0
 meilisearch==0.43.0
 greenlet
+PyJWT
+passlib[bcrypt]
+google-auth
+google-auth-httplib2
