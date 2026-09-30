@@ -77,8 +77,8 @@ export function HeaderLiveTicker() {
       </div>
 
       {/* Ultra Smooth, Slow Continuous Streaming Marquee Ticker */}
-      <div className="flex-1 overflow-hidden relative ml-2 sm:ml-4">
-        <div className="animate-marquee items-center gap-4 sm:gap-6">
+      <div className="flex-1 overflow-hidden relative ml-2 sm:ml-4 min-w-0">
+        <div className="animate-marquee items-center gap-4 sm:gap-6 min-w-min">
           {companyStats.map((comp, idx) => (
             <span key={`ticker-1-${idx}`} className="inline-flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-[13px] text-gray-200 font-medium shrink-0">
               <span className="text-orange-400">⚡</span>
