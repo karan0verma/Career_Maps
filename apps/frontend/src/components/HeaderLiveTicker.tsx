@@ -9,22 +9,9 @@ interface CompanyStat {
 }
 
 export function HeaderLiveTicker() {
-  const [totalJobs, setTotalJobs] = useState<number>(20618);
-  const [totalCompanies, setTotalCompanies] = useState<number>(12);
-  const [companyStats, setCompanyStats] = useState<CompanyStat[]>([
-    { name: 'HCLTech', count: 6766 },
-    { name: 'TCS', count: 3998 },
-    { name: 'Amazon', count: 2596 },
-    { name: 'Wipro', count: 2586 },
-    { name: 'Infosys', count: 1611 },
-    { name: 'Capgemini', count: 988 },
-    { name: 'Cognizant', count: 750 },
-    { name: 'Tech Mahindra', count: 703 },
-    { name: 'Oracle', count: 223 },
-    { name: 'Microsoft', count: 193 },
-    { name: 'Adobe', count: 102 },
-    { name: 'Coforge', count: 102 },
-  ]);
+  const [totalJobs, setTotalJobs] = useState<number>(0);
+  const [totalCompanies, setTotalCompanies] = useState<number>(0);
+  const [companyStats, setCompanyStats] = useState<CompanyStat[]>([]);
 
   useEffect(() => {
     const fetchLiveStats = async () => {
