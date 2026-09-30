@@ -58,17 +58,17 @@ export function HeaderLiveTicker() {
   }, []);
 
   return (
-    <div className="flex-1 w-full max-w-5xl lg:max-w-6xl mx-2 sm:mx-4 md:mx-6 overflow-hidden rounded-2xl bg-gradient-to-r from-orange-950/95 via-slate-900 to-amber-950/95 text-white border border-orange-500/40 shadow-lg shadow-orange-950/20 h-11 sm:h-12 flex items-center px-3 sm:px-4 backdrop-blur-md">
+    <div className="flex-1 w-full max-w-5xl lg:max-w-6xl mx-1 sm:mx-4 md:mx-6 overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-950/95 via-slate-900 to-amber-950/95 text-white border border-orange-500/40 shadow-lg shadow-orange-950/20 h-10 sm:h-12 flex items-center px-2 sm:px-4 backdrop-blur-md">
       {/* Left Static Badge with Pulsing Emerald Dot */}
-      <div className="flex items-center gap-2 shrink-0 pr-3 sm:pr-4 border-r border-orange-500/30">
-        <span className="relative flex h-2.5 w-2.5">
+      <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 pr-2 sm:pr-4 border-r border-orange-500/30">
+        <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-emerald-500"></span>
         </span>
-        <span className="font-extrabold text-[11px] sm:text-xs text-orange-300 tracking-wider uppercase whitespace-nowrap">
+        <span className="hidden md:inline-block font-extrabold text-[10px] sm:text-xs text-orange-300 tracking-wider uppercase whitespace-nowrap">
           CURRENTLY ACTIVE:
         </span>
-        <span className="font-black text-xs sm:text-sm text-white whitespace-nowrap">
+        <span className="font-black text-[11px] sm:text-sm text-white whitespace-nowrap">
           {totalJobs.toLocaleString()}+ Jobs
         </span>
         <span className="text-xs text-gray-400 font-medium hidden xl:inline-block">
@@ -77,10 +77,10 @@ export function HeaderLiveTicker() {
       </div>
 
       {/* Ultra Smooth, Slow Continuous Streaming Marquee Ticker */}
-      <div className="flex-1 overflow-hidden relative ml-3 sm:ml-4">
-        <div className="animate-marquee items-center gap-6">
+      <div className="flex-1 overflow-hidden relative ml-2 sm:ml-4">
+        <div className="animate-marquee items-center gap-4 sm:gap-6">
           {companyStats.map((comp, idx) => (
-            <span key={`ticker-1-${idx}`} className="inline-flex items-center gap-1.5 text-xs sm:text-[13px] text-gray-200 font-medium shrink-0">
+            <span key={`ticker-1-${idx}`} className="inline-flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-[13px] text-gray-200 font-medium shrink-0">
               <span className="text-orange-400">⚡</span>
               <span className="font-semibold text-white">{comp.name}:</span>
               <span className="text-orange-400 font-bold">{comp.count.toLocaleString()}</span>
@@ -88,7 +88,7 @@ export function HeaderLiveTicker() {
           ))}
           {/* Duplicate set for 100% seamless infinite loop */}
           {companyStats.map((comp, idx) => (
-            <span key={`ticker-2-${idx}`} className="inline-flex items-center gap-1.5 text-xs sm:text-[13px] text-gray-200 font-medium shrink-0">
+            <span key={`ticker-2-${idx}`} className="inline-flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-[13px] text-gray-200 font-medium shrink-0">
               <span className="text-orange-400">⚡</span>
               <span className="font-semibold text-white">{comp.name}:</span>
               <span className="text-orange-400 font-bold">{comp.count.toLocaleString()}</span>
