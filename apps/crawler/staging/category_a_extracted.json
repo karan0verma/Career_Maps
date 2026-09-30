@@ -1,0 +1,32 @@
+{
+  "google": {
+    "company": "Google India",
+    "jobs": [],
+    "total_portal_count": 0,
+    "verified_urls": []
+  },
+  "ibm": {
+    "company": "IBM India",
+    "jobs": [],
+    "total_portal_count": 0,
+    "verified_urls": []
+  },
+  "adobe": {
+    "company": "Adobe India",
+    "jobs": [],
+    "total_portal_count": 0,
+    "verified_urls": []
+  },
+  "cisco": {
+    "company": "Cisco India",
+    "jobs": [],
+    "total_portal_count": 0,
+    "verified_urls": []
+  },
+  "meta": {
+    "company": "Meta India",
+    "jobs": [],
+    "total_portal_count": 0,
+    "verified_urls": []
+  }
+}

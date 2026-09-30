@@ -1,0 +1,940 @@
+[
+  {
+    "name": "Tata Consultancy Services (TCS)",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Infosys",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 1,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Tech Mahindra",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "HCLTech",
+    "status": "SUCCESS",
+    "jobs_found": 131,
+    "jobs_added": 13,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Wipro",
+    "status": "SUCCESS",
+    "jobs_found": 177,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Mphasis",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Hexaware",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Birlasoft",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Zensar",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Coforge",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 1,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Cyient",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 1,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Tata Elxsi",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Persistent Systems",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "KPIT",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Ramco Systems",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Sonata Software",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Happiest Minds",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Mastek",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Accenture",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "LTIMindtree",
+    "status": "FAILED",
+    "jobs_found": null,
+    "jobs_added": null,
+    "error": "{'exception': \"Command '['C:\\\\\\\\Users\\\\\\\\Ahana Singh\\\\\\\\.gemini\\\\\\\\antigravity\\\\\\\\scratch\\\\\\\\career-maps\\\\\\\\apps\\\\\\\\backend\\\\\\\\.venv\\\\\\\\Scripts\\\\\\\\python.exe', 'C:\\\\\\\\Users\\\\\\\\Ahana Singh\\\\\\\\.gemini\\\\\\\\antigravity\\\\\\\\scratch\\\\\\\\career-maps\\\\\\\\apps\\\\\\\\crawler\\\\\\\\run_single.py', 'ltimindtree.com']' timed out after 300 seconds\"}"
+  },
+  {
+    "name": "LTIMindtree",
+    "status": "FAILED",
+    "jobs_found": null,
+    "jobs_added": null,
+    "error": "{'exception': \"Command '['C:\\\\\\\\Users\\\\\\\\Ahana Singh\\\\\\\\.gemini\\\\\\\\antigravity\\\\\\\\scratch\\\\\\\\career-maps\\\\\\\\apps\\\\\\\\backend\\\\\\\\.venv\\\\\\\\Scripts\\\\\\\\python.exe', 'C:\\\\\\\\Users\\\\\\\\Ahana Singh\\\\\\\\.gemini\\\\\\\\antigravity\\\\\\\\scratch\\\\\\\\career-maps\\\\\\\\apps\\\\\\\\crawler\\\\\\\\run_single.py', 'ltimindtree.com']' timed out after 300 seconds\"}"
+  },
+  {
+    "name": "Cognizant",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Deloitte",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "IBM",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "EY",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Capgemini",
+    "status": "FAILED",
+    "jobs_found": null,
+    "jobs_added": null,
+    "error": "{'exception': '(psycopg.errors.UniqueViolation) duplicate key value violates unique constraint \"jobs_apply_url_key\"\\nDETAIL:  Key (apply_url)=(https://www.capgemini.com/careers/) already exists.\\n[SQL: INSERT INTO jobs (job_id, company_id, external_job_id, title, department, location, country, state, city, work_mode, employment_type, experience_level, salary_min, salary_max, currency, description, requirements, apply_url, source_url, raw_data, embedding_status, embedding_updated_at, posted_at, first_seen_at, last_seen_at, is_active, is_deleted, updated_at) VALUES (%(job_id)s::UUID, %(company_id)s::UUID, %(external_job_id)s::VARCHAR, %(title)s::VARCHAR, %(department)s::VARCHAR, %(location)s::VARCHAR, %(country)s::VARCHAR, %(state)s::VARCHAR, %(city)s::VARCHAR, %(work_mode)s::VARCHAR, %(employment_type)s::VARCHAR, %(experience_level)s::VARCHAR, %(salary_min)s::INTEGER, %(salary_max)s::INTEGER, %(currency)s::VARCHAR, %(description)s::VARCHAR, %(requirements)s::VARCHAR, %(apply_url)s::VARCHAR, %(source_url)s::VARCHAR, %(raw_data)s::JSONB, %(embedding_status)s::VARCHAR, %(embedding_updated_at)s::TIMESTAMP WITH TIME ZONE, %(posted_at)s::TIMESTAMP WITH TIME ZONE, %(first_seen_at)s::TIMESTAMP WITH TIME ZONE, %(last_seen_at)s::TIMESTAMP WITH TIME ZONE, %(is_active)s, %(is_deleted)s, %(updated_at)s::TIMESTAMP WITH TIME ZONE) RETURNING jobs.created_at]\\n[parameters: {\\'job_id\\': UUID(\\'0e1a03b3-cf69-4bb1-9600-fcfde332a81d\\'), \\'company_id\\': UUID(\\'e2daf4d3-7bb5-4e44-9c2d-cbbb39aaedad\\'), \\'external_job_id\\': \\'435472-en_GB_SAPBTP\\', \\'title\\': \\'Senior DFT Engineer\\', \\'department\\': None, \\'location\\': \\'HITECHPARKODESA, Kyiv, Rivne, Lviv\\', \\'country\\': None, \\'state\\': None, \\'city\\': None, \\'work_mode\\': None, \\'employment_type\\': None, \\'experience_level\\': None, \\'salary_min\\': None, \\'salary_max\\': None, \\'currency\\': None, \\'description\\': \"<p>At Capgemini Engineering, the world leader in engineering services, we bring together a global team of engineers, scientists, and architects to he ... (5062 characters truncated) ... rket leading capabilities in AI, generative AI, cloud and data, combined with its deep industry expertise and partner ecosystem.</p><p>#LI-Remote</p>\", \\'requirements\\': None, \\'apply_url\\': \\'https://www.capgemini.com/careers/\\', \\'source_url\\': \\'https://www.capgemini.com/careers/\\', \\'raw_data\\': Jsonb({\\'companyId\\': \\'capgemini_com\\', \\'com ... (5915 chars)), \\'embedding_status\\': None, \\'embedding_updated_at\\': None, \\'posted_at\\': None, \\'first_seen_at\\': datetime.datetime(2026, 8, 9, 13, 38, 22, 298420), \\'last_seen_at\\': datetime.datetime(2026, 8, 9, 13, 38, 22, 298440), \\'is_active\\': True, \\'is_deleted\\': False, \\'updated_at\\': None}]\\n(Background on this error at: https://sqlalche.me/e/20/gkpj)'}"
+  },
+  {
+    "name": "KPMG",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Microsoft",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "PwC",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Apple",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Amazon",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Intel",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Google",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Meta",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Oracle",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Cisco",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Samsung Research Institute India (Noida)",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "GlobalLogic",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Qualcomm",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Nokia",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Ericsson",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Barco",
+    "status": "SUCCESS",
+    "jobs_found": 36,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Adobe India",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Salesforce",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 1,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Sopra Steria India",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "VMware",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Target",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Intuit",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Walmart",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 1,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "JP Morgan",
+    "status": "SUCCESS",
+    "jobs_found": 2,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Wells Fargo",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Morgan Stanley",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Goldman Sachs",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Visa",
+    "status": "SUCCESS",
+    "jobs_found": 2,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Uber",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Mastercard",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "American Express",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Paytm",
+    "status": "SUCCESS",
+    "jobs_found": 244,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "PayPal",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Netflix",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Swiggy",
+    "status": "SUCCESS",
+    "jobs_found": 17,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "OYO",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Flipkart",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "CRED",
+    "status": "SUCCESS",
+    "jobs_found": 6,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Zomato",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Razorpay",
+    "status": "SUCCESS",
+    "jobs_found": 22,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "PhonePe",
+    "status": "SUCCESS",
+    "jobs_found": 75,
+    "jobs_added": 1,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "BYJU'S",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Ola",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Pine Labs",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Meesho",
+    "status": "SUCCESS",
+    "jobs_found": 49,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "CARS24",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "BharatPe",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "SAP",
+    "status": "FAILED",
+    "jobs_found": null,
+    "jobs_added": null,
+    "error": "{'exception': \"Command '['C:\\\\\\\\Users\\\\\\\\Ahana Singh\\\\\\\\.gemini\\\\\\\\antigravity\\\\\\\\scratch\\\\\\\\career-maps\\\\\\\\apps\\\\\\\\backend\\\\\\\\.venv\\\\\\\\Scripts\\\\\\\\python.exe', 'C:\\\\\\\\Users\\\\\\\\Ahana Singh\\\\\\\\.gemini\\\\\\\\antigravity\\\\\\\\scratch\\\\\\\\career-maps\\\\\\\\apps\\\\\\\\crawler\\\\\\\\run_single.py', 'sap.com']' timed out after 300 seconds\"}"
+  },
+  {
+    "name": "Delhivery",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Nykaa",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "PolicyBazaar",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Freshworks",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Postman",
+    "status": "SUCCESS",
+    "jobs_found": 106,
+    "jobs_added": 86,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Druva",
+    "status": "SUCCESS",
+    "jobs_found": 28,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Glance",
+    "status": "SUCCESS",
+    "jobs_found": 42,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "InMobi",
+    "status": "SUCCESS",
+    "jobs_found": 70,
+    "jobs_added": 1,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "MakeMyTrip",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Dream11",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Upstox",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Zoho",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Groww",
+    "status": "SUCCESS",
+    "jobs_found": 8,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "BrowserStack",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Unacademy",
+    "status": "SUCCESS",
+    "jobs_found": 3,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Cleartrip",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "ShareChat",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Zerodha",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Myntra",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "upGrad",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "CureFit",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 1,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "1mg",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Vedantu",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "PharmEasy",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Lenskart",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Zepto",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Ather Energy",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Dunzo",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Mamaearth",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Urban Company",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Spinny",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Blinkit",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "boAt",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Rivigo",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "BlackBuck",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "OfBusiness",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Dailyhunt",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Zetwerk",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Fractal",
+    "status": "SUCCESS",
+    "jobs_found": 20,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Moglix",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Innovaccer",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Mu Sigma",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Infra.Market",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Newgen Software",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Udaan",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "RateGain",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Iris Software",
+    "status": "SUCCESS",
+    "jobs_found": 7,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Xebia",
+    "status": "SUCCESS",
+    "jobs_found": 4,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "TO THE NEW",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "Nagarro",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "ISRO",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "LambdaTest",
+    "status": "SUCCESS",
+    "jobs_found": 1,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "MAQ Software",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "SAIL",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "ONGC",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "BHEL",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Indian Oil",
+    "status": "NOT_FOUND",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': ['Career page discovery exhausted all strategies.']}"
+  },
+  {
+    "name": "Chetu",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "State Bank of India",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  },
+  {
+    "name": "NTPC",
+    "status": "COMPLETED_EMPTY",
+    "jobs_found": 0,
+    "jobs_added": 0,
+    "error": "{'crawler_errors': []}"
+  }
+]

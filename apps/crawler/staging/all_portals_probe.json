@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Google India",
+    "status": "OK",
+    "info": {
+      "title": "Search Jobs \u2014 Google Careers",
+      "countText": "Careers\nSkip navigation links\nhome\nHome\nHome\nwork_outline\nJobs\nJobs\nnoogler_hat\n",
+      "jobLinksCount": 11,
+      "sampleJob": {
+        "text": "Careers",
+        "href": "https://www.google.com/about/careers/applications/"
+      }
+    }
+  },
+  {
+    "name": "IBM India",
+    "status": "OK",
+    "info": {
+      "title": "Eightfold",
+      "countText": "",
+      "jobLinksCount": 0,
+      "sampleJob": null
+    }
+  },
+  {
+    "name": "Adobe India",
+    "status": "OK",
+    "info": {
+      "title": "",
+      "countText": "",
+      "jobLinksCount": 0,
+      "sampleJob": null
+    }
+  },
+  {
+    "name": "Cisco India",
+    "status": "OK",
+    "info": {
+      "title": "Careers at Cisco",
+      "countText": "\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n/*&lt;!--*/ var phApp = phApp || {\"widgetApiEndpoint\":\"https:",
+      "jobLinksCount": 1,
+      "sampleJob": {
+        "text": "Saved jobs\n(0)",
+        "href": "https://careers.cisco.com/global/en/jobcart"
+      }
+    }
+  },
+  {
+    "name": "Meta India",
+    "status": "OK",
+    "info": {
+      "title": "Meta Careers",
+      "countText": "{\"require\":[[\"ScheduledServerJS\",\"handle\",null,[{\"__bbox\":{\"define\":[[\"cr:310\",[",
+      "jobLinksCount": 11,
+      "sampleJob": {
+        "text": "Jobs",
+        "href": "https://www.metacareers.com/jobsearch/"
+      }
+    }
+  },
+  {
+    "name": "Accenture India",
+    "status": "OK",
+    "info": {
+      "title": "Search Jobs | Accenture",
+      "countText": "\n\t\t\t\t\t\t\t\t\n        \n        \n          \n            \n          \n          Ahmedab",
+      "jobLinksCount": 4,
+      "sampleJob": {
+        "text": "Saved Jobs",
+        "href": "https://www.accenture.com/in-en/careers/saved-jobs"
+      }
+    }
+  },
+  {
+    "name": "Capgemini India",
+    "status": "OK",
+    "info": {
+      "title": "Page not found - Capgemini India",
+      "countText": "\n\n\t\t\t\n\t\t\t\t\n\t\t\t\t\tSearch\n\t\t\t\t\t\n\t\t\t\t\t\tClose X\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+      "jobLinksCount": 39,
+      "sampleJob": {
+        "text": "Careers",
+        "href": "https://www.capgemini.com/in-en/careers/"
+      }
+    }
+  },
+  {
+    "name": "LTIMindtree",
+    "status": "ERR",
+    "error": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://careers.ltimindtree.com/search/?q=\nCall log:\n  - navigating to \"https://careers.ltimindtree.com/search/?q=\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "name": "Flipkart",
+    "status": "ERR",
+    "error": "Page.goto: Navigation to \"https://www.flipkartcareers.com/#!/search-jobs\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n  - navigating to \"https://www.flipkartcareers.com/#!/search-jobs\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "name": "Swiggy",
+    "status": "ERR",
+    "error": "Page.goto: Navigation to \"https://careers.swiggy.com/#/\" is interrupted by another navigation to \"https://www.flipkartcareers.com/#!/search-jobs\"\nCall log:\n  - navigating to \"https://careers.swiggy.com/#/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "name": "Zomato",
+    "status": "ERR",
+    "error": "Page.goto: Navigation to \"https://www.zomato.com/careers\" is interrupted by another navigation to \"https://careers.swiggy.com/#/\"\nCall log:\n  - navigating to \"https://www.zomato.com/careers\", waiting until \"domcontentloaded\"\n"
+  }
+]

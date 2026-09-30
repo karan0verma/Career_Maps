@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm build --filter=@career-maps/web",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
+  "outputDirectory": "apps/web/.next"
+}

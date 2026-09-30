@@ -1,0 +1,322 @@
+{
+  "src\\base_crawler.py": {
+    "bare_excepts": [],
+    "missing_type_hints": [
+      "random_delay (line 24)",
+      "log_execution (line 218)",
+      "_simulate_post_batch (line 145)"
+    ],
+    "requests_no_timeout": [
+      146
+    ],
+    "print_statements": [
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      228,
+      229
+    ],
+    "todo_comments": []
+  },
+  "src\\http_crawler.py": {
+    "bare_excepts": [
+      126
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [
+      115,
+      129,
+      130
+    ],
+    "todo_comments": []
+  },
+  "src\\main.py": {
+    "bare_excepts": [
+      62
+    ],
+    "missing_type_hints": [
+      "main (line 8)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [
+      9,
+      17,
+      21,
+      24,
+      36,
+      40,
+      53,
+      56,
+      59,
+      63,
+      68,
+      69,
+      70,
+      71
+    ],
+    "todo_comments": []
+  },
+  "src\\playwright_crawler.py": {
+    "bare_excepts": [
+      27,
+      62
+    ],
+    "missing_type_hints": [
+      "_take_screenshot (line 18)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [
+      25,
+      28,
+      36,
+      64,
+      70,
+      74,
+      75
+    ],
+    "todo_comments": []
+  },
+  "src\\registry.py": {
+    "bare_excepts": [],
+    "missing_type_hints": [
+      "register (line 10)",
+      "load_crawlers (line 23)",
+      "wrapper (line 12)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\ats\\registry.py": {
+    "bare_excepts": [],
+    "missing_type_hints": [
+      "register (line 9)",
+      "load_adapters (line 22)",
+      "wrapper (line 11)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\ats\\adapters\\bamboohr\\parser.py": {
+    "bare_excepts": [],
+    "missing_type_hints": [
+      "find_jobs_array (line 21)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\ats\\adapters\\greenhouse\\crawler.py": {
+    "bare_excepts": [
+      41
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\ats\\adapters\\lever\\crawler.py": {
+    "bare_excepts": [
+      41
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\ats\\adapters\\lever\\parser.py": {
+    "bare_excepts": [
+      67,
+      41
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\ats\\adapters\\phenom\\crawler.py": {
+    "bare_excepts": [
+      48,
+      83,
+      95
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [
+      45,
+      49,
+      71,
+      79,
+      81,
+      84,
+      96
+    ],
+    "todo_comments": []
+  },
+  "src\\ats\\adapters\\successfactors_rmk\\crawler.py": {
+    "bare_excepts": [
+      57,
+      193
+    ],
+    "missing_type_hints": [
+      "login (line 142)",
+      "parse (line 229)",
+      "normalize (line 233)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\ats\\adapters\\unknown\\crawler.py": {
+    "bare_excepts": [],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [
+      22
+    ],
+    "todo_comments": []
+  },
+  "src\\ats\\adapters\\workday\\crawler.py": {
+    "bare_excepts": [
+      60
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [
+      42,
+      45,
+      57,
+      61
+    ],
+    "todo_comments": []
+  },
+  "src\\crawler\\extractor.py": {
+    "bare_excepts": [
+      43
+    ],
+    "missing_type_hints": [
+      "crawl_company (line 4)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [
+      5,
+      39,
+      44
+    ],
+    "todo_comments": []
+  },
+  "src\\crawler\\scheduler.py": {
+    "bare_excepts": [],
+    "missing_type_hints": [
+      "run_scheduler (line 5)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [
+      18
+    ],
+    "todo_comments": []
+  },
+  "src\\discovery\\checkpoint.py": {
+    "bare_excepts": [
+      32,
+      24
+    ],
+    "missing_type_hints": [
+      "_load (line 17)",
+      "save (line 27)",
+      "mark_processed (line 38)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\discovery\\cli.py": {
+    "bare_excepts": [],
+    "missing_type_hints": [
+      "run (line 34)",
+      "_load_file (line 59)",
+      "_execute_pipeline (line 65)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\discovery\\dispatcher.py": {
+    "bare_excepts": [
+      62
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\discovery\\io.py": {
+    "bare_excepts": [],
+    "missing_type_hints": [
+      "write_jobs (line 56)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\discovery\\metrics.py": {
+    "bare_excepts": [
+      49
+    ],
+    "missing_type_hints": [
+      "add_target (line 24)",
+      "finish (line 41)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\services\\token_discovery\\cache.py": {
+    "bare_excepts": [
+      34,
+      42
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\services\\token_discovery\\service.py": {
+    "bare_excepts": [
+      97,
+      112,
+      182,
+      121
+    ],
+    "missing_type_hints": [
+      "set_cache_backend (line 15)",
+      "handle_request (line 134)"
+    ],
+    "requests_no_timeout": [],
+    "print_statements": [],
+    "todo_comments": []
+  },
+  "src\\utils\\api_client.py": {
+    "bare_excepts": [
+      20,
+      30,
+      48
+    ],
+    "missing_type_hints": [],
+    "requests_no_timeout": [],
+    "print_statements": [
+      18,
+      21,
+      31,
+      33,
+      49
+    ],
+    "todo_comments": []
+  }
+}

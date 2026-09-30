@@ -1,0 +1,98 @@
+company_name,domain,country,state,city,industry,company_type
+Flipkart,flipkart.com,India,Karnataka,Bengaluru,E-commerce,Product
+Swiggy,swiggy.com,India,Karnataka,Bengaluru,FoodTech,Product
+Zerodha,zerodha.com,India,Karnataka,Bengaluru,FinTech,Product
+Razorpay,razorpay.com,India,Karnataka,Bengaluru,FinTech,Product
+Cred,cred.club,India,Karnataka,Bengaluru,FinTech,Product
+Postman,postman.com,India,Karnataka,Bengaluru,DevTools,SaaS
+BrowserStack,browserstack.com,India,Karnataka,Bengaluru,DevTools,SaaS
+Ola,olacabs.com,India,Karnataka,Bengaluru,Mobility,Product
+Unacademy,unacademy.com,India,Karnataka,Bengaluru,EdTech,Product
+Byjus,byjus.com,India,Karnataka,Bengaluru,EdTech,Product
+Udaan,udaan.com,India,Karnataka,Bengaluru,B2B E-commerce,Product
+ShareChat,sharechat.com,India,Karnataka,Bengaluru,Social Media,Product
+Meesho,meesho.com,India,Karnataka,Bengaluru,E-commerce,Product
+PhonePe,phonepe.com,India,Karnataka,Bengaluru,FinTech,Product
+Groww,groww.in,India,Karnataka,Bengaluru,FinTech,Product
+CureFit,cure.fit,India,Karnataka,Bengaluru,HealthTech,Product
+Kite,kite.zerodha.com,India,Karnataka,Bengaluru,FinTech,Product
+Licious,licious.in,India,Karnataka,Bengaluru,FoodTech,Product
+Myntra,myntra.com,India,Karnataka,Bengaluru,E-commerce,Product
+ClearTax,cleartax.in,India,Karnataka,Bengaluru,FinTech,SaaS
+Khatabook,khatabook.com,India,Karnataka,Bengaluru,FinTech,Product
+Dunzo,dunzo.com,India,Karnataka,Bengaluru,Logistics,Product
+Ather Energy,atherenergy.com,India,Karnataka,Bengaluru,EV,Product
+Infosys,infosys.com,India,Karnataka,Bengaluru,IT Services,IT Service
+Wipro,wipro.com,India,Karnataka,Bengaluru,IT Services,IT Service
+Tesco Bengaluru,tescobengaluru.com,India,Karnataka,Bengaluru,Retail Tech,MNC Engineering Center
+Target India,target.com,India,Karnataka,Bengaluru,Retail Tech,MNC Engineering Center
+Walmart Global Tech,walmartglobaltech.com,India,Karnataka,Bengaluru,Retail Tech,MNC Engineering Center
+Amazon India,amazon.jobs,India,Karnataka,Bengaluru,E-commerce,MNC Engineering Center
+Google India,careers.google.com,India,Karnataka,Bengaluru,Tech,MNC Engineering Center
+Microsoft India,careers.microsoft.com,India,Karnataka,Bengaluru,Tech,MNC Engineering Center
+HackerEarth,hackerearth.com,India,Karnataka,Bengaluru,HR Tech,SaaS
+Darwinbox,darwinbox.com,India,Telangana,Hyderabad,HR Tech,SaaS
+HighRadius,highradius.com,India,Telangana,Hyderabad,FinTech,SaaS
+Zenoti,zenoti.com,India,Telangana,Hyderabad,SaaS,SaaS
+Keka,keka.com,India,Telangana,Hyderabad,HR Tech,SaaS
+Cyient,cyient.com,India,Telangana,Hyderabad,Engineering Services,IT Service
+Pramati Technologies,pramati.com,India,Telangana,Hyderabad,Software,Product
+Salesforce India,salesforce.com,India,Telangana,Hyderabad,SaaS,MNC Engineering Center
+ServiceNow India,servicenow.com,India,Telangana,Hyderabad,SaaS,MNC Engineering Center
+Oracle India,oracle.com,India,Telangana,Hyderabad,Enterprise Software,MNC Engineering Center
+D. E. Shaw India,deshawindia.com,India,Telangana,Hyderabad,FinTech,MNC Engineering Center
+Icertis,icertis.com,India,Maharashtra,Pune,SaaS,SaaS
+Mindtickle,mindtickle.com,India,Maharashtra,Pune,Sales Tech,SaaS
+Firstcry,firstcry.com,India,Maharashtra,Pune,E-commerce,Product
+Druva,druva.com,India,Maharashtra,Pune,Cloud Security,SaaS
+PubMatic,pubmatic.com,India,Maharashtra,Pune,AdTech,SaaS
+Xpressbees,xpressbees.com,India,Maharashtra,Pune,Logistics,Product
+Tech Mahindra,techmahindra.com,India,Maharashtra,Pune,IT Services,IT Service
+Persistent Systems,persistent.com,India,Maharashtra,Pune,IT Services,IT Service
+Zensar Technologies,zensar.com,India,Maharashtra,Pune,IT Services,IT Service
+Cvent India,cvent.com,India,Maharashtra,Pune,Event Tech,MNC Engineering Center
+Zomato,zomato.com,India,Haryana,Gurugram,FoodTech,Product
+Delhivery,delhivery.com,India,Haryana,Gurugram,Logistics,Product
+Oyo,oyorooms.com,India,Haryana,Gurugram,Travel Tech,Product
+MakeMyTrip,makemytrip.com,India,Haryana,Gurugram,Travel Tech,Product
+PolicyBazaar,policybazaar.com,India,Haryana,Gurugram,InsurTech,Product
+Urban Company,urbancompany.com,India,Haryana,Gurugram,Home Services,Product
+OfBusiness,ofbusiness.com,India,Haryana,Gurugram,B2B E-commerce,Product
+Spinny,spinny.com,India,Haryana,Gurugram,AutoTech,Product
+Pristyn Care,pristyncare.com,India,Haryana,Gurugram,HealthTech,Product
+Blinkit,blinkit.com,India,Haryana,Gurugram,Quick Commerce,Product
+Paytm,paytm.com,India,Uttar Pradesh,Noida,FinTech,Product
+Pine Labs,pinelabs.com,India,Uttar Pradesh,Noida,FinTech,Product
+Info Edge,infoedge.in,India,Uttar Pradesh,Noida,Internet,Product
+HCL Technologies,hcltech.com,India,Uttar Pradesh,Noida,IT Services,IT Service
+RateGain,rategain.com,India,Uttar Pradesh,Noida,Travel Tech,SaaS
+Moglix,moglix.com,India,Uttar Pradesh,Noida,B2B E-commerce,Product
+BharatPe,bharatpe.com,India,Delhi,Delhi,FinTech,Product
+Lenskart,lenskart.com,India,Delhi,Delhi,E-commerce,Product
+Snapdeal,snapdeal.com,India,Delhi,Delhi,E-commerce,Product
+Freshworks,freshworks.com,India,Tamil Nadu,Chennai,SaaS,SaaS
+Zoho,zoho.com,India,Tamil Nadu,Chennai,SaaS,SaaS
+Chargebee,chargebee.com,India,Tamil Nadu,Chennai,FinTech,SaaS
+Kissflow,kissflow.com,India,Tamil Nadu,Chennai,SaaS,SaaS
+TCS,tcs.com,India,Maharashtra,Mumbai,IT Services,IT Service
+Dream11,dream11.com,India,Maharashtra,Mumbai,Gaming,Product
+UpGrad,upgrad.com,India,Maharashtra,Mumbai,EdTech,Product
+Pharmeasy,pharmeasy.in,India,Maharashtra,Mumbai,HealthTech,Product
+Eruditus,eruditus.com,India,Maharashtra,Mumbai,EdTech,Product
+Nykaa,nykaa.com,India,Maharashtra,Mumbai,E-commerce,Product
+Zepto,zeptonow.com,India,Maharashtra,Mumbai,Quick Commerce,Product
+CleverTap,clevertap.com,India,Maharashtra,Mumbai,MarTech,SaaS
+Pepperfry,pepperfry.com,India,Maharashtra,Mumbai,E-commerce,Product
+Fingent,fingent.com,India,Kerala,Kochi,IT Services,IT Service
+IBS Software,ibsplc.com,India,Kerala,Kochi,Travel Tech,Product
+Lendingkart,lendingkart.com,India,Gujarat,Ahmedabad,FinTech,Product
+Infibeam Avenues,ia.ooo,India,Gujarat,Gandhinagar,FinTech,Product
+Hubilo,hubilo.com,India,Gujarat,Ahmedabad,Event Tech,SaaS
+Jugnoo,jugnoo.in,India,Punjab,Chandigarh,Mobility,Product
+Trigma,trigma.com,India,Punjab,Chandigarh,IT Services,IT Service
+CarDekho,cardekho.com,India,Rajasthan,Jaipur,AutoTech,Product
+GirnarSoft,girnarsoft.com,India,Rajasthan,Jaipur,IT Services,IT Service
+Yash Technologies,yash.com,India,Madhya Pradesh,Indore,IT Services,IT Service
+Systango,systango.com,India,Madhya Pradesh,Indore,IT Services,IT Service
+Kovai.co,kovai.co,India,Tamil Nadu,Coimbatore,SaaS,SaaS
+Payoda,payoda.com,India,Tamil Nadu,Coimbatore,IT Services,IT Service

@@ -1,0 +1,8 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "pnpm run build"
+
+[deploy]
+startCommand = "pnpm --filter @career-maps/api start:prod"
+healthcheckPath = "/api/v1/opportunities"
+healthcheckTimeout = 100

@@ -1,0 +1,133 @@
+{
+  "Google": {
+    "ATS": "UNKNOWN",
+    "Confidence": 0,
+    "Evidence": [
+      "No standard ATS footprints found in network or DOM."
+    ],
+    "APIs": [
+      "https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700",
+      "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.ZqnMwDlk7IU.2019.O/rt=j/m=q_dnp,q_pc,qmd,qcwid,qapid,qads/exm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/rs=AA2YrTvWj6Zx7ZWGlW2zytoC7uFhMqjzgQ",
+      "https://play.google.com/log?format=json&hasfast=true"
+    ],
+    "HTML_Size": 1026266
+  },
+  "Microsoft": {
+    "ATS": "SUCCESSFACTORS",
+    "Confidence": 100,
+    "Evidence": [
+      "Found SuccessFactors network requests."
+    ],
+    "APIs": [
+      "https://www.recaptcha.net/recaptcha/api.js?render=6LfwboYUAAAAAJb6QcVuRXi7R9pTqgGKF6TnNzia",
+      "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&w=0",
+      "https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&k=6LfwboYUAAAAAJb6QcVuRXi7R9pTqgGKF6TnNzia&co=aHR0cHM6Ly9hcHBseS5jYXJlZXJzLm1pY3Jvc29mdC5jb206NDQz&hl=en&v=w_Yb7dGGXaKesJ7BMiqFJqBG&size=invisible&anchor-ms=20000&execute-ms=30000&cb=tp14q4dsrg2e",
+      "https://apply.careers.microsoft.com/api/pcsx/job_cart?domain=microsoft.com",
+      "https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=&location=&start=0&"
+    ],
+    "HTML_Size": 2232602
+  },
+  "Amazon": {
+    "ATS": "UNKNOWN",
+    "Confidence": 0,
+    "Evidence": [
+      "No standard ATS footprints found in network or DOM."
+    ],
+    "APIs": [
+      "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=CCBC879D5572070E7F000101%40AdobeOrg&d_nsid=0&ts=1785335230522",
+      "https://amazon.jobs/en/search.json?radius=24km&facets%5B%5D=normalized_country_code&facets%5B%5D=normalized_state_name&facets%5B%5D=normalized_city_name&facets%5B%5D=location&facets%5B%5D=business_category&facets%5B%5D=category&facets%5B%5D=schedule_type_id&facets%5B%5D=employee_class&facets%5B%5D=normalized_location&facets%5B%5D=job_function_id&facets%5B%5D=is_manager&facets%5B%5D=is_intern&offset=0&result_limit=10&sort=relevant&latitude=&longitude=&loc_group_id=&loc_query=&base_query=&city=&country=&region=&county=&query_options=&"
+    ],
+    "HTML_Size": 67743
+  },
+  "TCS": {
+    "ATS": "UNKNOWN",
+    "Confidence": 0,
+    "Evidence": [
+      "No standard ATS footprints found in network or DOM."
+    ],
+    "APIs": [
+      "https://cdn.cookielaw.org/consent/2af66668-d407-488e-9301-c6c63a324e40/2af66668-d407-488e-9301-c6c63a324e40.json",
+      "https://www.tcs.com/libs/cq/i18n/dict.en.json",
+      "https://cdn.cookielaw.org/scripttemplates/202605.1.0/sri-hashes.json",
+      "https://www.tcs.com/content/dam/global-tcs/en/worldwide-json/language-ww-23-july-2026.json?_=1785335234903",
+      "https://www.tcs.com/content/dam/global-tcs/en/twitter-feed-json/linkedln-global-careers.json"
+    ],
+    "HTML_Size": 370690
+  },
+  "Infosys": {
+    "ATS": "UNKNOWN",
+    "Confidence": 0,
+    "Evidence": [
+      "No standard ATS footprints found in network or DOM."
+    ],
+    "APIs": [
+      "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap",
+      "https://cdn-ukwest.onetrust.com/consent/ef4f40b0-973b-4590-b721-17004da55359/ef4f40b0-973b-4590-b721-17004da55359.json",
+      "https://dpm.demdex.net/id?d_visid_ver=5.5.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=144E0EF55657094C7F000101%40AdobeOrg&d_nsid=0&ts=1785335239138",
+      "https://cdn-ukwest.onetrust.com/consent/ef4f40b0-973b-4590-b721-17004da55359/d21411bc-d032-444e-b7b7-760167af1346/en.json",
+      "https://c.go-mpulse.net/api/config.json?key=9SRC5-T976C-EZWJ3-F8UTD-NCGZS&d=www.infosys.com&t=5951117&v=1.720.0&sl=0&si=0e5b6060-6bf6-41ed-92ca-6205e60322e4-tixxhi&plugins=ConsentInlinedPlugin,AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,History,Angular,Backbone,Ember,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,Akamai,Early,EventTiming,LOGN&acao=&ak.ai=273935"
+    ],
+    "HTML_Size": 144536
+  },
+  "Wipro": {
+    "ATS": "SUCCESSFACTORS",
+    "Confidence": 100,
+    "Evidence": [
+      "Found SuccessFactors network requests."
+    ],
+    "APIs": [
+      "https://maps.googleapis.com/maps/api/js?v=quarterly&language=en_US&region=US&client=gme-sapglobalmarketing&libraries=marker&loading=async&channel=rmk-jobmap",
+      "https://maps.googleapis.com/maps/api/js?v=quarterly&language=en_US&region=US&client=gme-sapglobalmarketing&libraries=marker&loading=async&channel=rmk-jobmap",
+      "https://maps.googleapis.com/maps-api-v3/api/js/64/14a/util.js",
+      "https://maps.googleapis.com/maps-api-v3/api/js/64/14a/marker.js",
+      "https://maps.googleapis.com/maps-api-v3/api/js/64/14a/common.js"
+    ],
+    "HTML_Size": 210655
+  },
+  "Flipkart": {
+    "ATS": "UNKNOWN",
+    "Confidence": 0,
+    "Evidence": [
+      "No standard ATS footprints found in network or DOM."
+    ],
+    "APIs": [
+      "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    ],
+    "HTML_Size": 38808
+  },
+  "Zomato": {
+    "ATS": "UNKNOWN",
+    "Confidence": 0,
+    "Evidence": [
+      "No standard ATS footprints found in network or DOM."
+    ],
+    "APIs": [
+      "https://www.google-analytics.com/g/collect?v=2&tid=G-DR4161D646&gtm=45je67r2v9258170637za200zd9258170637&_p=1785335253011&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=249941845.1785335254&frm=0&ngs=1&pscdl=noapi&rcb=18&sr=1280x720&uaa=&uab=&uafvl=&uam=&uamb=0&uap=&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115938466~115938468~118395335~118897920~118897930~119896803~120084215&sid=1785335253&sct=1&seg=0&dl=https%3A%2F%2Fwww.eternal.com%2Fcareers%2F&dt=Careers%20-%20Hiring%20at%20Eternal&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1517"
+    ],
+    "HTML_Size": 379706
+  },
+  "Swiggy": {
+    "ATS": "UNKNOWN",
+    "Confidence": 0,
+    "Evidence": [
+      "No standard ATS footprints found in network or DOM."
+    ],
+    "APIs": [
+      "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap",
+      "https://www.google-analytics.com/g/collect?v=2&tid=G-76P34S6XQ2&gtm=45je67r2h1v871196196za200zd871196196&_p=1785335256753&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1271683264.1785335257&frm=0&pscdl=noapi&rcb=2&sr=1280x720&uaa=&uab=&uafvl=&uam=&uamb=0&uap=&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~119527020~119896803&sid=1785335257&sct=1&seg=0&dl=https%3A%2F%2Fcareers.swiggy.com%2F&dt=Swiggy%20Careers&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=906"
+    ],
+    "HTML_Size": 34096
+  },
+  "Meta": {
+    "ATS": "WORKDAY",
+    "Confidence": 100,
+    "Evidence": [
+      "Found Workday network requests or specific wday/cxs endpoints."
+    ],
+    "APIs": [
+      "https://www.metacareers.com/api/graphql/"
+    ],
+    "HTML_Size": 869950
+  }
+}

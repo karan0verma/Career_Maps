@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ats-discovery-crawler"
+version = "1.0.0"
+description = "Universal ATS Discovery and Crawler Framework"
+authors = [
+    {name = "Antigravity Engineering", email = "engineering@antigravity.ai"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests",
+    "playwright",
+    "beautifulsoup4",
+    "pyyaml"
+]
+
+[project.scripts]
+ats-discover = "src.discovery.cli:CLIController.run"

@@ -1,0 +1,94 @@
+WORKDAY:
+  url:
+    - myworkdayjobs.com
+  html:
+    - .myworkdayjobs.com
+    - wd1.myworkdayjobs.com
+    - wd3.myworkdayjobs.com
+    - wd5.myworkdayjobs.com
+SUCCESSFACTORS_RMK:
+  url:
+    - jobs.sap.com
+    - careers.successfactors.com
+    - successfactors.com
+  html:
+    - successfactors.com
+    - career4.successfactors.com
+    - career8.successfactors.com
+    - sfcareer
+    - .sapsf.
+    - jobs.sap.com
+PHENOM:
+  html:
+    - PhenomPeople
+GREENHOUSE:
+  url:
+    - boards.greenhouse.io
+    - greenhouse.io/careers
+  html:
+    - boards.greenhouse.io
+    - greenhouse.io/embed/job_board
+    - boards-api.greenhouse.io
+    - api.greenhouse.io
+    - grnhse-iframe
+    - gh-src
+LEVER:
+  url:
+    - jobs.lever.co
+  html:
+    - jobs.lever.co
+    - api.lever.co
+ASHBY:
+  url:
+    - jobs.ashbyhq.com
+  html:
+    - jobs.ashbyhq.com
+    - ashbyhq.com/api
+    - api.ashbyhq.com
+SMARTRECRUITERS:
+  url:
+    - smartrecruiters.com
+  html:
+    - smartrecruiters.com
+WORKABLE:
+  url:
+    - workable.com
+    - apply.workable.com
+JOBVITE:
+  url:
+    - jobs.jobvite.com
+  html:
+    - jobs.jobvite.com
+BAMBOOHR:
+  url:
+    - bamboohr.com/careers
+  html:
+    - window.BambooHR
+    - bamboohr.com
+EIGHTFOLD:
+  url:
+    - eightfold.ai
+  html:
+    - eightfold.ai
+ZOHO_RECRUIT:
+  url:
+    - zohorecruit.com
+  html:
+    - zohorecruit.com
+TALEO:
+  url:
+    - taleo.net
+  html:
+    - taleo.net
+    - .taleo.
+ICIMS:
+  url:
+    - icims.com
+  html:
+    - icims.com
+    - .icims.
+AVATURE:
+  url:
+    - avature.net
+  html:
+    - avature.net

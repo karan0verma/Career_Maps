@@ -1,0 +1,401 @@
+{
+  "processed_domains": [
+    "discord.com",
+    "target.com",
+    "browserstack.com",
+    "lendingkart.com",
+    "shopify.com",
+    "cyient.com",
+    "chargebee.com",
+    "pharmeasy.in",
+    "bharatpe.com",
+    "spinny.com",
+    "jugnoo.in",
+    "infosys.com",
+    "hackerearth.com",
+    "lenskart.com",
+    "zenoti.com",
+    "groww.in",
+    "keka.com",
+    "byjus.com",
+    "cloudflare.com",
+    "unacademy.com",
+    "systango.com",
+    "phonepe.com",
+    "zerodha.com",
+    "deshawindia.com",
+    "techmahindra.com",
+    "gitlab.com",
+    "vercel.com",
+    "cure.fit",
+    "freshworks.com",
+    "rategain.com",
+    "oyorooms.com",
+    "flipkart.com",
+    "lyft.com",
+    "micron.com",
+    "zeptonow.com",
+    "plaid.com",
+    "myntra.com",
+    "kissflow.com",
+    "zensar.com",
+    "cvent.com",
+    "postman.com",
+    "servicenow.com",
+    "licious.in",
+    "nykaa.com",
+    "druva.com",
+    "zoho.com",
+    "atherenergy.com",
+    "blinkit.com",
+    "airbnb.com",
+    "zomato.com",
+    "cred.club",
+    "urbancompany.com",
+    "khatabook.com",
+    "snapdeal.com",
+    "razorpay.com",
+    "oracle.com",
+    "policybazaar.com",
+    "ibsplc.com",
+    "moglix.com",
+    "swiggy.com",
+    "sharechat.com",
+    "upgrad.com",
+    "ofbusiness.com",
+    "payoda.com",
+    "canva.com",
+    "tcs.com",
+    "mindtickle.com",
+    "icertis.com",
+    "coinbase.com",
+    "highradius.com",
+    "pinterest.com",
+    "pramati.com",
+    "doordash.com",
+    "tescobengaluru.com",
+    "clevertap.com",
+    "pinelabs.com",
+    "hcltech.com",
+    "dream11.com",
+    "olacabs.com",
+    "ia.ooo",
+    "girnarsoft.com",
+    "stripe.com",
+    "walmartglobaltech.com",
+    "paytm.com",
+    "udaan.com",
+    "trigma.com",
+    "figma.com",
+    "pepperfry.com",
+    "eruditus.com",
+    "hubspot.com",
+    "hubilo.com",
+    "dunzo.com",
+    "pubmatic.com",
+    "amazon.jobs",
+    "darwinbox.com",
+    "careers.google.com",
+    "kovai.co",
+    "cardekho.com",
+    "meesho.com",
+    "framer.com",
+    "zoom.us",
+    "careers.microsoft.com",
+    "xpressbees.com",
+    "pristyncare.com",
+    "persistent.com",
+    "delhivery.com",
+    "infoedge.in",
+    "kite.zerodha.com",
+    "cleartax.in",
+    "fingent.com",
+    "wipro.com",
+    "openai.com",
+    "makemytrip.com",
+    "yash.com",
+    "notion.so",
+    "salesforce.com",
+    "firstcry.com"
+  ],
+  "targets": [
+    {
+      "company_name": "stripe.com",
+      "domain": "stripe.com",
+      "career_url": "https://stripe.com/in/careers",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 546,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "stripe"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "openai.com",
+      "domain": "openai.com",
+      "career_url": "https://openai.com/careers/",
+      "ats_type": "ASHBY",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 749,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "openai"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "cloudflare.com",
+      "domain": "cloudflare.com",
+      "career_url": "https://www.cloudflare.com/careers/",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 284,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "cloudflare"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "notion.so",
+      "domain": "notion.so",
+      "career_url": "https://www.notion.com/careers",
+      "ats_type": "ASHBY",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 111,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "notion"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "gitlab.com",
+      "domain": "gitlab.com",
+      "career_url": "https://gitlab.com/jobs",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 185,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "gitlab"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "shopify.com",
+      "domain": "shopify.com",
+      "career_url": "https://www.shopify.com/careers",
+      "ats_type": null,
+      "detection_confidence": 0.0,
+      "status": "UNSUPPORTED_ATS",
+      "jobs_discovered": 0,
+      "execution_time_ms": 0,
+      "metadata": {},
+      "errors": [
+        "No matching ATS signature found."
+      ]
+    },
+    {
+      "company_name": "micron.com",
+      "domain": "micron.com",
+      "career_url": "https://www.micron.com/about/careers",
+      "ats_type": "EIGHTFOLD",
+      "detection_confidence": 0.9,
+      "status": "COMPLETED_EMPTY",
+      "jobs_discovered": 0,
+      "execution_time_ms": 0,
+      "metadata": {},
+      "errors": []
+    },
+    {
+      "company_name": "discord.com",
+      "domain": "discord.com",
+      "career_url": "https://discord.com/careers",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 43,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "discord"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "framer.com",
+      "domain": "framer.com",
+      "career_url": "https://www.framer.com/careers/",
+      "ats_type": null,
+      "detection_confidence": 0.0,
+      "status": "UNSUPPORTED_ATS",
+      "jobs_discovered": 0,
+      "execution_time_ms": 0,
+      "metadata": {},
+      "errors": [
+        "No matching ATS signature found."
+      ]
+    },
+    {
+      "company_name": "canva.com",
+      "domain": "canva.com",
+      "career_url": "https://www.lifeatcanva.com/en/",
+      "ats_type": "SMARTRECRUITERS",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 237,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "canva"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "vercel.com",
+      "domain": "vercel.com",
+      "career_url": "https://vercel.com/careers",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 81,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "vercel"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "figma.com",
+      "domain": "figma.com",
+      "career_url": "https://www.figma.com/careers/",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 178,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "figma"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "airbnb.com",
+      "domain": "airbnb.com",
+      "career_url": "https://careers.airbnb.com",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 184,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "airbnb"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "doordash.com",
+      "domain": "doordash.com",
+      "career_url": null,
+      "ats_type": null,
+      "detection_confidence": 0.0,
+      "status": "NOT_FOUND",
+      "jobs_discovered": 0,
+      "execution_time_ms": 0,
+      "metadata": {},
+      "errors": [
+        "Career page discovery exhausted all strategies."
+      ]
+    },
+    {
+      "company_name": "plaid.com",
+      "domain": "plaid.com",
+      "career_url": "https://plaid.com/careers/",
+      "ats_type": "ASHBY",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 117,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "plaid"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "lyft.com",
+      "domain": "lyft.com",
+      "career_url": "https://www.lyft.com/careers",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 162,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "lyft"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "pinterest.com",
+      "domain": "pinterest.com",
+      "career_url": "https://www.pinterestcareers.com/",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 211,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "pinterest"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "coinbase.com",
+      "domain": "coinbase.com",
+      "career_url": "https://www.coinbase.com/en-in/careers",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 160,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "coinbase"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "zoom.us",
+      "domain": "zoom.us",
+      "career_url": "https://explore.zoom.us/en/careers/",
+      "ats_type": "WORKDAY",
+      "detection_confidence": 0.85,
+      "status": "SUCCESS",
+      "jobs_discovered": 20,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "zoom:wd5"
+      },
+      "errors": []
+    },
+    {
+      "company_name": "hubspot.com",
+      "domain": "hubspot.com",
+      "career_url": "https://www.hubspot.com/careers",
+      "ats_type": "GREENHOUSE",
+      "detection_confidence": 0.85,
+      "status": "COMPLETED_EMPTY",
+      "jobs_discovered": 0,
+      "execution_time_ms": 0,
+      "metadata": {
+        "board_token": "hubspot"
+      },
+      "errors": []
+    }
+  ]
+}

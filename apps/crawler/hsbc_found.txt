@@ -1,0 +1,9 @@
+Careers at HSBC: https://mycareer.hsbc.com/en_GB/external/SearchJobs
+Click here to get job recommendations: https://mycareer.hsbc.com/jobrecommendations/
+Most recent: https://mycareer.hsbc.com/en_GB/external/SearchJobs?scrollToJobsSection=true
+Recently viewed jobs: https://mycareer.hsbc.com/en_GB/external/RecentlyViewedJobsPopup
+2: https://mycareer.hsbc.com/en_GB/external/SearchJobs/?pipelineRecordsPerPage=10&pipelineOffset=10
+3: https://mycareer.hsbc.com/en_GB/external/SearchJobs/?pipelineRecordsPerPage=10&pipelineOffset=20
+4: https://mycareer.hsbc.com/en_GB/external/SearchJobs/?pipelineRecordsPerPage=10&pipelineOffset=30
+5: https://mycareer.hsbc.com/en_GB/external/SearchJobs/?pipelineRecordsPerPage=10&pipelineOffset=40
+Next >>: https://mycareer.hsbc.com/en_GB/external/SearchJobs/?pipelineRecordsPerPage=10&pipelineOffset=10

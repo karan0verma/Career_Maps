@@ -1,0 +1,14 @@
+{
+  "total_targets": 97,
+  "career_pages_found": 78,
+  "ats_detected_count": {
+    "SMARTRECRUITERS": 4,
+    "GREENHOUSE": 8,
+    "LEVER": 5,
+    "WORKDAY": 2
+  },
+  "unsupported_ats": 59,
+  "crawl_failures": 0,
+  "total_jobs_found": 1173,
+  "execution_time_seconds": 4935.0
+}
