@@ -14,3 +14,4 @@ PyJWT
 passlib[bcrypt]
 google-auth
 google-auth-httplib2
+email-validator
