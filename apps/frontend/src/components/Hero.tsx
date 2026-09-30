@@ -34,10 +34,10 @@ export function Hero({ jobCount, companyCount }: HeroProps) {
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
 
       <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
-        <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight drop-shadow-sm">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight drop-shadow-sm">
           Find the right <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400">opportunity</span> for you
         </h1>
-        <p className="text-xl text-gray-500 mb-8 max-w-2xl mx-auto font-medium">
+        <p className="text-lg md:text-xl text-gray-500 mb-8 max-w-2xl mx-auto font-medium">
           Discover jobs that match your skills, career goals, and lifestyle.
         </p>
         
