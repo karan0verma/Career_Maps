@@ -67,7 +67,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             </div>
 
             {/* Live Ticker in Center of Header - Full width on Mobile */}
-            <div className="w-full sm:flex-1 sm:px-4 flex justify-center order-last sm:order-none min-w-0 overflow-hidden mt-1 sm:mt-0">
+            <div className="w-full sm:flex-1 sm:px-4 order-last sm:order-none min-w-0 overflow-hidden mt-1 sm:mt-0">
               <HeaderLiveTicker />
             </div>
 
