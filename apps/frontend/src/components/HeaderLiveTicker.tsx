@@ -29,7 +29,7 @@ export function HeaderLiveTicker() {
   useEffect(() => {
     const fetchLiveStats = async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/v1/companies');
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1'}/companies`);
         if (res.ok) {
           const comps = await res.json();
           if (Array.isArray(comps) && comps.length > 0) {
