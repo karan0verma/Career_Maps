@@ -9,11 +9,13 @@ import { useAuth } from '@/context/AuthContext';
 interface JobCardProps {
   job: Job;
   isForYou?: boolean;
+  initialIsSaved?: boolean;
+  onUnsave?: (jobId: string) => void;
 }
 
-export function JobCard({ job, isForYou }: JobCardProps) {
+export function JobCard({ job, isForYou, initialIsSaved = false, onUnsave }: JobCardProps) {
   const { isAuthenticated } = useAuth();
-  const [isSaved, setIsSaved] = useState(false);
+  const [isSaved, setIsSaved] = useState(initialIsSaved);
   const [logoError, setLogoError] = useState(false);
 
   const handleSave = async (e: React.MouseEvent) => {
@@ -25,6 +27,7 @@ export function JobCard({ job, isForYou }: JobCardProps) {
       if (isSaved) {
         await apiRequest(`/users/me/saved_jobs/${job.job_id}`, { method: 'DELETE' });
         setIsSaved(false);
+        if (onUnsave) onUnsave(job.job_id);
       } else {
         await apiRequest(`/users/me/saved_jobs?job_id=${job.job_id}`, { method: 'POST' });
         setIsSaved(true);
