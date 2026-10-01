@@ -95,6 +95,12 @@ class ViewedJob(Base):
     viewed_at = Column(DateTime(timezone=True), server_default=func.now())
     job = relationship("Job")
 
+class SiteStat(Base):
+    __tablename__ = "site_stats"
+    
+    id = Column(String, primary_key=True, default="global")
+    visitor_count = Column(Integer, default=0)
+
 class NotificationQueue(Base):
     __tablename__ = "notification_queue"
     

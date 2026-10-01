@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { Sidebar } from './Sidebar';
 import { Navbar } from './navbar';
@@ -8,11 +8,37 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Bookmark, Compass, Menu, CheckCircle, Users } from 'lucide-react';
 import { HeaderLiveTicker } from './HeaderLiveTicker';
+import { apiRequest } from '@/lib/api';
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   const { user, isAuthenticated, isLoading } = useAuth();
   const pathname = usePathname();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [visitorCount, setVisitorCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Check if we've already counted this session
+    const hasVisited = sessionStorage.getItem('has_visited');
+    
+    if (!hasVisited) {
+      apiRequest('/stats/visit', { method: 'POST' })
+        .then(data => {
+          if (data && data.visitor_count) {
+            setVisitorCount(data.visitor_count);
+            sessionStorage.setItem('has_visited', 'true');
+          }
+        })
+        .catch(() => {});
+    } else {
+      apiRequest('/stats/visit')
+        .then(data => {
+          if (data && data.visitor_count) {
+            setVisitorCount(data.visitor_count);
+          }
+        })
+        .catch(() => {});
+    }
+  }, []);
 
   const isAuthPage = pathname === '/login' || pathname === '/register';
   
@@ -116,7 +142,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               <div className="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100 shadow-xs text-xs sm:text-sm text-gray-500 font-medium">
                 <Users className="w-4 h-4 text-orange-500" />
                 Visitors: <span className="font-bold text-gray-700">
-                  {(12450 + (Math.max(0, Math.floor((new Date().getTime() - new Date('2024-08-01').getTime()) / (1000 * 60 * 60 * 24))) * 42) + new Date().getHours()).toLocaleString()}
+                  {visitorCount !== null ? visitorCount.toLocaleString() : '...'}
                 </span>
               </div>
             </div>
@@ -145,7 +171,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               <div className="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100 shadow-xs text-xs sm:text-sm text-gray-500 font-medium">
                 <Users className="w-4 h-4 text-orange-500" />
                 Visitors: <span className="font-bold text-gray-700">
-                  {(12450 + (Math.max(0, Math.floor((new Date().getTime() - new Date('2024-08-01').getTime()) / (1000 * 60 * 60 * 24))) * 42) + new Date().getHours()).toLocaleString()}
+                  {visitorCount !== null ? visitorCount.toLocaleString() : '...'}
                 </span>
               </div>
             </div>
