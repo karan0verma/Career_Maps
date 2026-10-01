@@ -6,7 +6,7 @@ import { Sidebar } from './Sidebar';
 import { Navbar } from './navbar';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Bookmark, Compass, Menu } from 'lucide-react';
+import { Bookmark, Compass, Menu, CheckCircle } from 'lucide-react';
 import { HeaderLiveTicker } from './HeaderLiveTicker';
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
@@ -51,11 +51,14 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               </div>
 
               {/* Right Profile Info - Mobile Only */}
-              <div className="flex lg:hidden items-center gap-3 shrink-0">
+              <div className="flex lg:hidden items-center gap-2 shrink-0">
+                <Link href="/profile/applied" className={`p-1.5 rounded-xl hover:bg-gray-100 ${pathname === '/profile/applied' ? 'text-orange-600' : 'text-gray-500'}`}>
+                  <CheckCircle className="h-5 w-5" />
+                </Link>
                 <Link href="/profile/saved" className={`p-1.5 rounded-xl hover:bg-gray-100 ${pathname === '/profile/saved' ? 'text-orange-600' : 'text-gray-500'}`}>
                   <Bookmark className="h-5 w-5" fill={pathname === '/profile/saved' ? 'currentColor' : 'none'} />
                 </Link>
-                <Link href="/profile" className="flex items-center gap-2 cursor-pointer">
+                <Link href="/profile" className="flex items-center gap-2 cursor-pointer ml-1">
                   {user?.profile_image ? (
                     <img src={user.profile_image} alt="" className="h-7 w-7 rounded-full bg-gray-200 object-cover shadow-xs" />
                   ) : (
@@ -73,7 +76,14 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             </div>
 
             {/* Right Profile Info - Desktop Only */}
-            <div className="hidden lg:flex items-center gap-3 lg:gap-5 shrink-0">
+            <div className="hidden lg:flex items-center gap-2 lg:gap-4 shrink-0">
+              <Link 
+                href="/profile/applied"
+                className={`transition-colors p-2 rounded-xl hover:bg-gray-100 ${pathname === '/profile/applied' ? 'text-orange-600' : 'text-gray-500 hover:text-gray-700'}`}
+                title="Applied Jobs"
+              >
+                <CheckCircle className="h-5 w-5" />
+              </Link>
               <Link 
                 href="/profile/saved"
                 className={`transition-colors p-2 rounded-xl hover:bg-gray-100 ${pathname === '/profile/saved' ? 'text-orange-600' : 'text-gray-500 hover:text-gray-700'}`}

@@ -61,6 +61,14 @@ class SearchHistory(Base):
     result_count = Column(Integer)
     searched_at = Column(DateTime(timezone=True), server_default=func.now())
 
+class AppliedJob(Base):
+    __tablename__ = "applied_jobs"
+    
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.user_id"), primary_key=True)
+    job_id = Column(UUID(as_uuid=True), ForeignKey("jobs.job_id"), primary_key=True)
+    applied_at = Column(DateTime(timezone=True), server_default=func.now())
+    job = relationship("Job")
+
 class JobAlert(Base):
     __tablename__ = "job_alerts"
     

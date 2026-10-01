@@ -107,7 +107,7 @@ export default async function JobDetailsPage({ params }: { params: Promise<{ id:
             </div>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <ApplyButton applyUrl={job.apply_url} />
+              <ApplyButton applyUrl={job.apply_url} jobId={job.job_id} />
             </div>
           </div>
         </div>

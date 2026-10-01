@@ -71,6 +71,9 @@ export function Navbar({ onOpenMenu }: NavbarProps) {
         <div className="hidden lg:flex items-center gap-2 lg:gap-3 shrink-0">
           {isLoggedIn ? (
             <>
+              <Link href="/profile/applied" className="text-sm font-medium text-gray-600 hover:text-orange-600 transition-colors">
+                Applied Jobs
+              </Link>
               <Link href="/profile/saved" className="text-sm font-medium text-gray-600 hover:text-orange-600 transition-colors">
                 Saved Jobs
               </Link>

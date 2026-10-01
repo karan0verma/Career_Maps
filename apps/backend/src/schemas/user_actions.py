@@ -25,6 +25,25 @@ class SavedJobWithCompanyDetails(SavedJobBase):
     class Config:
         from_attributes = True
 
+class AppliedJobBase(BaseModel):
+    job_id: UUID
+
+class AppliedJobSchema(AppliedJobBase):
+    user_id: UUID
+    applied_at: datetime
+    job: Optional[Job] = None
+
+    class Config:
+        from_attributes = True
+
+class AppliedJobWithCompanyDetails(AppliedJobBase):
+    user_id: UUID
+    applied_at: datetime
+    job: Optional[JobWithCompany] = None
+
+    class Config:
+        from_attributes = True
+
 class ViewedJobBase(BaseModel):
     job_id: UUID
 

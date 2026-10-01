@@ -5,8 +5,8 @@ from src.core import security
 from src.api import deps
 from src.models.user import User
 from src.schemas.user import UserUpdate, User as UserSchema
-from src.schemas.user_actions import SavedJob as SavedJobSchema, ViewedJob as ViewedJobSchema, SearchHistory as SearchHistorySchema, SavedJobWithCompanyDetails, ViewedJobWithCompanyDetails
-from src.models.user import SavedJob, ViewedJob, SearchHistory
+from src.schemas.user_actions import SavedJob as SavedJobSchema, ViewedJob as ViewedJobSchema, SearchHistory as SearchHistorySchema, SavedJobWithCompanyDetails, ViewedJobWithCompanyDetails, AppliedJobSchema, AppliedJobWithCompanyDetails
+from src.models.user import SavedJob, ViewedJob, SearchHistory, AppliedJob
 from src.models.job import Job
 from uuid import UUID
 from datetime import datetime
@@ -146,6 +146,39 @@ def remove_saved_job(
         db.commit()
         
     return {"message": "Job unsaved"}
+
+@router.post("/me/applied_jobs", response_model=AppliedJobWithCompanyDetails)
+def apply_job(
+    *,
+    db: Session = Depends(deps.get_db),
+    job_id: UUID,
+    current_user: User = Depends(deps.get_current_active_user)
+) -> Any:
+    job = db.query(Job).filter(Job.job_id == job_id, Job.is_deleted == False).first()
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+        
+    applied = db.query(AppliedJob).filter(
+        AppliedJob.user_id == current_user.user_id,
+        AppliedJob.job_id == job_id
+    ).first()
+    
+    if not applied:
+        applied = AppliedJob(user_id=current_user.user_id, job_id=job_id)
+        db.add(applied)
+        db.commit()
+        db.refresh(applied)
+        
+    return applied
+
+@router.get("/me/applied_jobs", response_model=List[AppliedJobWithCompanyDetails])
+def list_applied_jobs(
+    db: Session = Depends(deps.get_db),
+    skip: int = 0,
+    limit: int = 100,
+    current_user: User = Depends(deps.get_current_active_user)
+) -> Any:
+    return db.query(AppliedJob).options(joinedload(AppliedJob.job).joinedload(Job.company)).filter(AppliedJob.user_id == current_user.user_id).order_by(AppliedJob.applied_at.desc()).offset(skip).limit(limit).all()
 
 @router.get("/me/viewed_jobs", response_model=List[ViewedJobWithCompanyDetails])
 def list_viewed_jobs(
