@@ -32,18 +32,7 @@ export function ApplyButton({ applyUrl, jobId }: ApplyButtonProps) {
     }
   }, [isAuthenticated, jobId]);
 
-  // Safeguard: Ensure Infosys links always have valid hiring entity query params
-  const getProcessedUrl = (url: string | null | undefined) => {
-    if (!url) return '';
-    let finalUrl = url.trim();
-    if (finalUrl.includes('career.infosys.com/jobdesc') && !finalUrl.includes('companyhiringtype')) {
-      const sep = finalUrl.includes('?') ? '&' : '?';
-      finalUrl = `${finalUrl}${sep}companyhiringtype=IL&countrycode=IN`;
-    }
-    return finalUrl;
-  };
-
-  const finalApplyUrl = getProcessedUrl(applyUrl);
+  const finalApplyUrl = applyUrl ? applyUrl.trim() : '';
 
   const handleApplyClick = (e: React.MouseEvent) => {
     if (!isAuthenticated) {

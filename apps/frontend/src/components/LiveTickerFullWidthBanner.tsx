@@ -17,7 +17,7 @@ export function LiveTickerFullWidthBanner() {
     { name: 'TCS', count: 3962 },
     { name: 'Amazon', count: 2596 },
     { name: 'Wipro', count: 2586 },
-    { name: 'Infosys', count: 1611 },
+    { name: 'Accenture', count: 1611 },
     { name: 'Cognizant', count: 750 },
     { name: 'Tech Mahindra', count: 645 },
     { name: 'Oracle', count: 223 },

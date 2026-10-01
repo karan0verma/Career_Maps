@@ -19,7 +19,7 @@ export function LiveStatsFloatingBanner() {
     { name: 'TCS', count: 3962 },
     { name: 'Amazon', count: 2596 },
     { name: 'Wipro', count: 2586 },
-    { name: 'Infosys', count: 1611 },
+    { name: 'Accenture', count: 1611 },
     { name: 'Cognizant', count: 750 },
     { name: 'Tech Mahindra', count: 645 },
     { name: 'Oracle', count: 223 },
@@ -138,7 +138,7 @@ export function LiveStatsFloatingBanner() {
           <div className="mt-2 text-[11px] text-gray-300 overflow-hidden whitespace-nowrap bg-black/30 rounded-lg px-2.5 py-1 flex items-center gap-2">
             <span className="text-orange-400 font-bold shrink-0">⚡ Live:</span>
             <div className="animate-marquee inline-block text-gray-300">
-              HCLTech ({companyStats[0]?.count.toLocaleString() || '6,766'}) • TCS ({companyStats[1]?.count.toLocaleString() || '3,962'}) • Amazon ({companyStats[2]?.count.toLocaleString() || '2,596'}) • Wipro ({companyStats[3]?.count.toLocaleString() || '2,586'}) • Infosys ({companyStats[4]?.count.toLocaleString() || '1,611'}) • Cognizant ({companyStats[5]?.count.toLocaleString() || '750'}) • Oracle ({companyStats[7]?.count.toLocaleString() || '223'}) • Microsoft ({companyStats[8]?.count.toLocaleString() || '193'})
+              HCLTech ({companyStats[0]?.count.toLocaleString() || '6,766'}) • TCS ({companyStats[1]?.count.toLocaleString() || '3,962'}) • Amazon ({companyStats[2]?.count.toLocaleString() || '2,596'}) • Wipro ({companyStats[3]?.count.toLocaleString() || '2,586'}) • Accenture ({companyStats[4]?.count.toLocaleString() || '1,611'}) • Cognizant ({companyStats[5]?.count.toLocaleString() || '750'}) • Oracle ({companyStats[7]?.count.toLocaleString() || '223'}) • Microsoft ({companyStats[8]?.count.toLocaleString() || '193'})
             </div>
           </div>
         )}
