@@ -17,6 +17,8 @@ export default function PreferencesPage() {
   
   const [customRole, setCustomRole] = useState('');
   const [customSkill, setCustomSkill] = useState('');
+  const [showRoleSuggestions, setShowRoleSuggestions] = useState(false);
+  const [showSkillSuggestions, setShowSkillSuggestions] = useState(false);
   
   // Resume extraction state
   const [file, setFile] = useState<File | null>(null);
@@ -251,23 +253,64 @@ export default function PreferencesPage() {
               </button>
             ))}
           </div>
-          <div className="flex items-center gap-2 max-w-sm">
-            <input
-              type="text"
-              placeholder="Add custom role (e.g. Graphic Designer)"
-              className="flex-1 px-4 py-2 rounded-xl border border-gray-200 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
-              value={customRole}
-              onChange={(e) => setCustomRole(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && customRole.trim()) {
-                  e.preventDefault();
-                  if (!preferences.preferred_roles.includes(customRole.trim())) {
-                    setPreferences(prev => ({ ...prev, preferred_roles: [...prev.preferred_roles, customRole.trim()] }));
+          <div className="relative flex items-center gap-2 max-w-sm">
+            <div className="flex-1 relative">
+              <input
+                type="text"
+                placeholder="Add custom role (e.g. Graphic Designer)"
+                className="w-full px-4 py-2 rounded-xl border border-gray-200 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
+                value={customRole}
+                onChange={(e) => {
+                  setCustomRole(e.target.value);
+                  setShowRoleSuggestions(true);
+                }}
+                onFocus={() => setShowRoleSuggestions(true)}
+                onBlur={() => setTimeout(() => setShowRoleSuggestions(false), 200)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && customRole.trim()) {
+                    e.preventDefault();
+                    if (!preferences.preferred_roles.includes(customRole.trim())) {
+                      setPreferences(prev => ({ ...prev, preferred_roles: [...prev.preferred_roles, customRole.trim()] }));
+                    }
+                    setCustomRole('');
+                    setShowRoleSuggestions(false);
                   }
-                  setCustomRole('');
-                }
-              }}
-            />
+                }}
+              />
+              {showRoleSuggestions && customRole.trim().length > 0 && (
+                <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-xl shadow-lg max-h-48 overflow-y-auto">
+                  {predefinedRoles
+                    .filter(r => r.toLowerCase().includes(customRole.toLowerCase()) && !preferences.preferred_roles.includes(r))
+                    .map(role => (
+                      <div
+                        key={role}
+                        className="px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 cursor-pointer"
+                        onClick={() => {
+                          setPreferences(prev => ({ ...prev, preferred_roles: [...prev.preferred_roles, role] }));
+                          setCustomRole('');
+                          setShowRoleSuggestions(false);
+                        }}
+                      >
+                        {role}
+                      </div>
+                    ))}
+                    {customRole.trim() && !predefinedRoles.some(r => r.toLowerCase() === customRole.toLowerCase()) && (
+                      <div
+                        className="px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 cursor-pointer font-medium border-t border-gray-100"
+                        onClick={() => {
+                          if (!preferences.preferred_roles.includes(customRole.trim())) {
+                            setPreferences(prev => ({ ...prev, preferred_roles: [...prev.preferred_roles, customRole.trim()] }));
+                          }
+                          setCustomRole('');
+                          setShowRoleSuggestions(false);
+                        }}
+                      >
+                        Add "{customRole.trim()}"
+                      </div>
+                    )}
+                </div>
+              )}
+            </div>
             <Button 
               type="button"
               variant="outline"
@@ -277,6 +320,7 @@ export default function PreferencesPage() {
                   setPreferences(prev => ({ ...prev, preferred_roles: [...prev.preferred_roles, customRole.trim()] }));
                 }
                 setCustomRole('');
+                setShowRoleSuggestions(false);
               }}
             >
               Add
@@ -306,23 +350,64 @@ export default function PreferencesPage() {
               </button>
             ))}
           </div>
-          <div className="flex items-center gap-2 max-w-sm">
-            <input
-              type="text"
-              placeholder="Add custom skill (e.g. Graphic Design)"
-              className="flex-1 px-4 py-2 rounded-xl border border-gray-200 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
-              value={customSkill}
-              onChange={(e) => setCustomSkill(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && customSkill.trim()) {
-                  e.preventDefault();
-                  if (!preferences.skills.includes(customSkill.trim())) {
-                    setPreferences(prev => ({ ...prev, skills: [...prev.skills, customSkill.trim()] }));
+          <div className="relative flex items-center gap-2 max-w-sm">
+            <div className="flex-1 relative">
+              <input
+                type="text"
+                placeholder="Add custom skill (e.g. Graphic Design)"
+                className="w-full px-4 py-2 rounded-xl border border-gray-200 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
+                value={customSkill}
+                onChange={(e) => {
+                  setCustomSkill(e.target.value);
+                  setShowSkillSuggestions(true);
+                }}
+                onFocus={() => setShowSkillSuggestions(true)}
+                onBlur={() => setTimeout(() => setShowSkillSuggestions(false), 200)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && customSkill.trim()) {
+                    e.preventDefault();
+                    if (!preferences.skills.includes(customSkill.trim())) {
+                      setPreferences(prev => ({ ...prev, skills: [...prev.skills, customSkill.trim()] }));
+                    }
+                    setCustomSkill('');
+                    setShowSkillSuggestions(false);
                   }
-                  setCustomSkill('');
-                }
-              }}
-            />
+                }}
+              />
+              {showSkillSuggestions && customSkill.trim().length > 0 && (
+                <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-xl shadow-lg max-h-48 overflow-y-auto">
+                  {predefinedSkills
+                    .filter(s => s.toLowerCase().includes(customSkill.toLowerCase()) && !preferences.skills.includes(s))
+                    .map(skill => (
+                      <div
+                        key={skill}
+                        className="px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 cursor-pointer"
+                        onClick={() => {
+                          setPreferences(prev => ({ ...prev, skills: [...prev.skills, skill] }));
+                          setCustomSkill('');
+                          setShowSkillSuggestions(false);
+                        }}
+                      >
+                        {skill}
+                      </div>
+                    ))}
+                    {customSkill.trim() && !predefinedSkills.some(s => s.toLowerCase() === customSkill.toLowerCase()) && (
+                      <div
+                        className="px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 cursor-pointer font-medium border-t border-gray-100"
+                        onClick={() => {
+                          if (!preferences.skills.includes(customSkill.trim())) {
+                            setPreferences(prev => ({ ...prev, skills: [...prev.skills, customSkill.trim()] }));
+                          }
+                          setCustomSkill('');
+                          setShowSkillSuggestions(false);
+                        }}
+                      >
+                        Add "{customSkill.trim()}"
+                      </div>
+                    )}
+                </div>
+              )}
+            </div>
             <Button 
               type="button"
               variant="outline"
@@ -332,6 +417,7 @@ export default function PreferencesPage() {
                   setPreferences(prev => ({ ...prev, skills: [...prev.skills, customSkill.trim()] }));
                 }
                 setCustomSkill('');
+                setShowSkillSuggestions(false);
               }}
             >
               Add
