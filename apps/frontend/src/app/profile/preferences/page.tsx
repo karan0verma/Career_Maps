@@ -15,6 +15,9 @@ export default function PreferencesPage() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   
+  const [customRole, setCustomRole] = useState('');
+  const [customSkill, setCustomSkill] = useState('');
+  
   // Resume extraction state
   const [file, setFile] = useState<File | null>(null);
   const [isExtracting, setIsExtracting] = useState(false);
@@ -154,8 +157,12 @@ export default function PreferencesPage() {
     }
   };
 
-  const roles = ['Software Engineer', 'Frontend Developer', 'Backend Developer', 'Full Stack Developer', 'Data Scientist', 'Product Manager', 'DevOps Engineer', 'QA Engineer', 'UI/UX Designer'];
-  const skills = ['React', 'Next.js', 'Python', 'Java', 'JavaScript', 'TypeScript', 'AWS', 'Docker', 'Kubernetes', 'SQL', 'PostgreSQL', 'MongoDB'];
+  const predefinedRoles = ['Software Engineer', 'Frontend Developer', 'Backend Developer', 'Full Stack Developer', 'Data Scientist', 'Machine Learning Engineer', 'Product Manager', 'Project Manager', 'Business Analyst', 'DevOps Engineer', 'QA Engineer', 'UI/UX Designer', 'Cloud Architect', 'Security Engineer', 'Systems Engineer', 'Mobile Developer'];
+  const predefinedSkills = ['React', 'Next.js', 'Python', 'Java', 'JavaScript', 'TypeScript', 'C++', 'C#', 'AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'SQL', 'PostgreSQL', 'MongoDB', 'Redis', 'GraphQL', 'Node.js', 'Django', 'Spring Boot', 'Figma', 'Git'];
+  
+  const displayRoles = Array.from(new Set([...predefinedRoles, ...(preferences.preferred_roles || [])]));
+  const displaySkills = Array.from(new Set([...predefinedSkills, ...(preferences.skills || [])]));
+  
   const workModes = ['Remote', 'Hybrid', 'On-site'];
   const employmentTypes = ['Full-time', 'Contract', 'Part-time', 'Internship'];
 
@@ -227,9 +234,10 @@ export default function PreferencesPage() {
         
         {/* Roles Section */}
         <div>
-          <h3 className="text-lg font-bold text-gray-900 mb-4">What roles are you looking for?</h3>
-          <div className="flex flex-wrap gap-2">
-            {roles.map(role => (
+          <h3 className="text-lg font-bold text-gray-900 mb-2">What roles are you looking for?</h3>
+          <p className="text-sm text-gray-500 mb-4">Select from the suggestions below or add your own.</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {displayRoles.map(role => (
               <button
                 key={role}
                 onClick={() => toggleArrayItem('preferred_roles', role)}
@@ -243,6 +251,37 @@ export default function PreferencesPage() {
               </button>
             ))}
           </div>
+          <div className="flex items-center gap-2 max-w-sm">
+            <input
+              type="text"
+              placeholder="Add custom role (e.g. Graphic Designer)"
+              className="flex-1 px-4 py-2 rounded-xl border border-gray-200 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
+              value={customRole}
+              onChange={(e) => setCustomRole(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && customRole.trim()) {
+                  e.preventDefault();
+                  if (!preferences.preferred_roles.includes(customRole.trim())) {
+                    setPreferences(prev => ({ ...prev, preferred_roles: [...prev.preferred_roles, customRole.trim()] }));
+                  }
+                  setCustomRole('');
+                }
+              }}
+            />
+            <Button 
+              type="button"
+              variant="outline"
+              className="rounded-xl px-4 py-2 bg-white"
+              onClick={() => {
+                if (customRole.trim() && !preferences.preferred_roles.includes(customRole.trim())) {
+                  setPreferences(prev => ({ ...prev, preferred_roles: [...prev.preferred_roles, customRole.trim()] }));
+                }
+                setCustomRole('');
+              }}
+            >
+              Add
+            </Button>
+          </div>
         </div>
 
         <hr className="border-gray-100" />
@@ -250,29 +289,53 @@ export default function PreferencesPage() {
         {/* Skills Section */}
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">Core Skills</h3>
-          <p className="text-sm text-gray-500 mb-4">Select from common skills or extract from your resume above.</p>
+          <p className="text-sm text-gray-500 mb-4">Select from common skills, add your own, or extract from your resume above.</p>
           <div className="flex flex-wrap gap-2 mb-4">
-            {preferences.skills.map(skill => (
+            {displaySkills.map(skill => (
               <button
                 key={skill}
                 onClick={() => toggleArrayItem('skills', skill)}
-                className="px-4 py-2 rounded-full text-sm font-semibold transition-all border bg-orange-50 text-orange-600 border-orange-200 shadow-sm flex items-center gap-1"
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all border ${
+                  preferences.skills.includes(skill)
+                    ? 'bg-orange-50 text-orange-600 border-orange-200 shadow-sm flex items-center gap-1'
+                    : 'bg-white text-gray-600 border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                }`}
               >
-                {skill}
-                <X className="w-3 h-3 ml-1 opacity-60" />
+                {!preferences.skills.includes(skill) ? '+ ' : ''}{skill}
+                {preferences.skills.includes(skill) && <X className="w-3 h-3 ml-1 opacity-60" />}
               </button>
             ))}
           </div>
-          <div className="flex flex-wrap gap-2">
-            {skills.filter(s => !preferences.skills.includes(s)).map(skill => (
-              <button
-                key={skill}
-                onClick={() => toggleArrayItem('skills', skill)}
-                className="px-4 py-2 rounded-full text-sm font-semibold transition-all border bg-white text-gray-600 border-gray-200 hover:border-gray-300 hover:bg-gray-50"
-              >
-                + {skill}
-              </button>
-            ))}
+          <div className="flex items-center gap-2 max-w-sm">
+            <input
+              type="text"
+              placeholder="Add custom skill (e.g. Graphic Design)"
+              className="flex-1 px-4 py-2 rounded-xl border border-gray-200 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
+              value={customSkill}
+              onChange={(e) => setCustomSkill(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && customSkill.trim()) {
+                  e.preventDefault();
+                  if (!preferences.skills.includes(customSkill.trim())) {
+                    setPreferences(prev => ({ ...prev, skills: [...prev.skills, customSkill.trim()] }));
+                  }
+                  setCustomSkill('');
+                }
+              }}
+            />
+            <Button 
+              type="button"
+              variant="outline"
+              className="rounded-xl px-4 py-2 bg-white"
+              onClick={() => {
+                if (customSkill.trim() && !preferences.skills.includes(customSkill.trim())) {
+                  setPreferences(prev => ({ ...prev, skills: [...prev.skills, customSkill.trim()] }));
+                }
+                setCustomSkill('');
+              }}
+            >
+              Add
+            </Button>
           </div>
         </div>
 
@@ -332,11 +395,11 @@ export default function PreferencesPage() {
           />
         </div>
 
-        <div className="pt-6 flex justify-end gap-4 border-t border-gray-100">
-          <Button variant="outline" onClick={() => router.push('/jobs')} className="rounded-xl px-6 py-5 font-semibold text-gray-600">
+        <div className="pt-6 flex flex-col-reverse sm:flex-row justify-end gap-3 sm:gap-4 border-t border-gray-100">
+          <Button variant="outline" onClick={() => router.push('/jobs')} className="rounded-xl w-full sm:w-auto px-6 py-5 font-semibold text-gray-600">
             Cancel
           </Button>
-          <Button onClick={handleSave} disabled={isSaving} className="rounded-xl px-8 py-5 bg-orange-600 hover:bg-orange-700 font-bold shadow-md shadow-orange-500/20">
+          <Button onClick={handleSave} disabled={isSaving} className="rounded-xl w-full sm:w-auto px-8 py-5 bg-orange-600 hover:bg-orange-700 font-bold shadow-md shadow-orange-500/20">
             {isSaving ? 'Saving...' : 'Save Preferences'}
           </Button>
         </div>

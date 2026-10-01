@@ -246,29 +246,30 @@ export function JobsFeed({ companyType }: { companyType?: string }) {
       )}
 
       {showBanner && isAuthenticated && isDashboard && (
-        <div className="bg-[#FFF7ED] rounded-2xl p-4 sm:p-6 mb-8 flex flex-col sm:flex-row items-center justify-between border border-orange-100 shadow-sm relative overflow-hidden">
-          <div className="flex items-center gap-4 relative z-10 mb-4 sm:mb-0">
+        <div className="bg-[#FFF7ED] rounded-2xl p-4 sm:p-6 mb-8 flex flex-col sm:flex-row items-center justify-between border border-orange-100 shadow-sm relative overflow-hidden pr-10">
+          <button 
+            className="absolute top-3 right-3 p-1.5 bg-white/50 hover:bg-white text-gray-400 hover:text-gray-600 rounded-full transition-colors z-20"
+            onClick={() => setShowBanner(false)}
+          >
+            <X className="w-5 h-5" />
+          </button>
+          
+          <div className="flex items-center gap-4 relative z-10 mb-4 sm:mb-0 w-full">
             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm text-orange-500">
               <Sparkles className="w-6 h-6" />
             </div>
-            <div>
-              <h3 className="font-bold text-gray-900 text-lg">Want better job recommendations?</h3>
-              <p className="text-gray-600 text-sm">Complete your career preferences to get personalized job matches.</p>
+            <div className="flex-1 pr-4">
+              <h3 className="font-bold text-gray-900 text-base sm:text-lg">Want better job recommendations?</h3>
+              <p className="text-gray-600 text-xs sm:text-sm mt-1">Complete your career preferences to get personalized job matches.</p>
             </div>
           </div>
-          <div className="flex items-center gap-4 relative z-10 w-full sm:w-auto">
+          <div className="flex items-center relative z-10 w-full sm:w-auto">
             <Button 
-              className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white rounded-xl py-5 font-semibold"
+              className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white rounded-xl py-5 font-semibold shadow-md"
               onClick={() => router.push('/profile/preferences')}
             >
               Personalize My Jobs
             </Button>
-            <button 
-              className="p-2 text-gray-400 hover:text-gray-600 transition-colors"
-              onClick={() => setShowBanner(false)}
-            >
-              <X className="w-5 h-5" />
-            </button>
           </div>
         </div>
       )}
@@ -277,9 +278,9 @@ export function JobsFeed({ companyType }: { companyType?: string }) {
       {activeTab === 'all' && (!isDashboard || isAuthenticated) && (
         <div className="mb-8 space-y-3">
           {/* Main Search Bar */}
-          <form onSubmit={handleSearch} className="w-full bg-white p-1.5 border border-gray-200 rounded-2xl shadow-xs flex flex-col sm:flex-row items-stretch sm:items-center gap-1.5 sm:gap-0 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
+          <form onSubmit={handleSearch} className="w-full bg-white p-1.5 border border-gray-200 rounded-2xl shadow-xs flex flex-col sm:flex-row items-stretch sm:items-center gap-1.5 sm:gap-0 divide-y sm:divide-y-0 sm:divide-x divide-gray-100 relative z-40">
             
-            <div className="flex-1 flex items-center px-3.5 py-1.5 sm:py-2 transition-colors focus-within:bg-gray-50 rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none relative">
+            <div className={`flex-1 flex items-center px-3.5 py-1.5 sm:py-2 transition-colors focus-within:bg-gray-50 rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none relative ${showSuggestions ? 'z-50' : 'z-10'}`}>
               <Search className="w-4 h-4 text-gray-400 shrink-0" />
               <input 
                 type="text"

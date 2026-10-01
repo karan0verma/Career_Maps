@@ -34,7 +34,7 @@ export function Navbar({ onOpenMenu }: NavbarProps) {
               <div className="w-7 h-7 lg:w-8 lg:h-8 rounded-xl bg-orange-100 flex items-center justify-center text-orange-600">
                 <Compass className="h-4 w-4 lg:h-5 lg:w-5" />
               </div>
-              <span className="inline-block font-extrabold text-lg lg:text-xl tracking-tight text-gray-900 hidden sm:inline-block">Career Maps</span>
+              <span className="inline-block font-extrabold text-lg lg:text-xl tracking-tight text-gray-900">Career Maps</span>
             </Link>
           </div>
 
