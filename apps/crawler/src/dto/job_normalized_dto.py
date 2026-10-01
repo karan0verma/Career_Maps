@@ -1,6 +1,6 @@
-import datetime
+﻿import datetime
 from dataclasses import dataclass, field
-from typing import Optional
+from typing import Optional, List
 
 @dataclass
 class JobNormalizedDTO:
@@ -23,5 +23,6 @@ class JobNormalizedDTO:
     team: Optional[str] = None
     workplaceType: Optional[str] = None
     publishedAt: Optional[str] = None
+    requiredSkills: List[str] = field(default_factory=list)
     
     discoveredAt: str = field(default_factory=lambda: datetime.datetime.utcnow().isoformat())

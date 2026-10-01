@@ -113,22 +113,42 @@ class BaseCrawler:
         Temporarily allows backward compatibility for adapters that return DTOs directly from parse().
         """
         import logging
+        import sys
+        import os
+        # Need to import enrich_skills_from_text from backend
+        backend_utils_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "backend", "src", "services"))
+        if backend_utils_path not in sys.path:
+            sys.path.append(backend_utils_path)
+        try:
+            from skill_enricher import enrich_skills_from_text
+        except ImportError:
+            def enrich_skills_from_text(t): return []
+            
         logger = logging.getLogger(__name__)
         
         normalized = []
         for item in parsed_data:
             if isinstance(item, JobNormalizedDTO):
-                # If it's already a DTO, the adapter skipped the intended pipeline
-                # but we allow it for backward compatibility for now.
-                logger.warning(f"[{self.company_name}] Adapter bypassed standard normalization by returning JobNormalizedDTO directly from parse(). This will be strictly enforced later.")
+                if not getattr(item, 'requiredSkills', None):
+                    text_for_skills = f"{item.title} {item.description or ''} {item.department or ''}"
+                    item.requiredSkills = enrich_skills_from_text(text_for_skills)
                 normalized.append(item)
             elif isinstance(item, dict):
+                title = item.get("title", "")
+                desc = item.get("description", "")
+                dept = item.get("department", "")
+                
+                req_skills = item.get("requiredSkills") or item.get("required_skills") or []
+                if not req_skills:
+                    text_for_skills = f"{title} {desc} {dept}"
+                    req_skills = enrich_skills_from_text(text_for_skills)
+                    
                 dto = JobNormalizedDTO(
                     companyId=self.company_id,
                     companyName=self.company_name,
                     externalJobId=item.get("externalJobId") or item.get("external_job_id", ""),
-                    title=item.get("title", ""),
-                    description=item.get("description"),
+                    title=title,
+                    description=desc,
                     location=item.get("location"),
                     city=item.get("city"),
                     state=item.get("state"),
@@ -137,10 +157,11 @@ class BaseCrawler:
                     experience=item.get("experience"),
                     applyUrl=item.get("applyUrl") or item.get("apply_url", ""),
                     sourceATS=item.get("sourceATS", "UNKNOWN"),
-                    department=item.get("department"),
+                    department=dept,
                     team=item.get("team"),
                     workplaceType=item.get("workplaceType"),
-                    publishedAt=item.get("publishedAt")
+                    publishedAt=item.get("publishedAt"),
+                    requiredSkills=req_skills
                 )
                 normalized.append(dto)
         return normalized
