@@ -1,0 +1,36 @@
+name: Daily Crawler Sync
+
+on:
+  schedule:
+    # Runs at 20:30 UTC every day (02:00 AM IST)
+    - cron: '30 20 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Install Backend Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r apps/backend/requirements.txt
+        
+    - name: Install Crawler Dependencies
+      run: |
+        pip install -r apps/crawler/requirements.txt
+        playwright install chromium --with-deps
+        
+    - name: Run Daily Sync Script
+      env:
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      run: |
+        python apps/crawler/scripts/daily_sync.py
