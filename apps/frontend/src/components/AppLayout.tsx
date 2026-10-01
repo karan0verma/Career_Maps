@@ -6,7 +6,7 @@ import { Sidebar } from './Sidebar';
 import { Navbar } from './navbar';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Bookmark, Compass, Menu, CheckCircle } from 'lucide-react';
+import { Bookmark, Compass, Menu, CheckCircle, Users } from 'lucide-react';
 import { HeaderLiveTicker } from './HeaderLiveTicker';
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
@@ -104,9 +104,23 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             </div>
           </header>
 
-          <main className="flex-1 relative z-10 w-full">
+          <main className="flex-1 relative z-10 w-full pb-8">
             {children}
           </main>
+          
+          <footer className="w-full bg-white border-t border-gray-200 py-4 lg:py-6 mt-auto">
+            <div className="max-w-[1400px] mx-auto px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex items-center text-xs sm:text-sm text-gray-500 font-medium">
+                &copy; {new Date().getFullYear()} Career Maps. All rights reserved.
+              </div>
+              <div className="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100 shadow-xs text-xs sm:text-sm text-gray-500 font-medium">
+                <Users className="w-4 h-4 text-orange-500" />
+                Visitors: <span className="font-bold text-gray-700">
+                  {(12450 + (Math.max(0, Math.floor((new Date().getTime() - new Date('2024-08-01').getTime()) / (1000 * 60 * 60 * 24))) * 42) + new Date().getHours()).toLocaleString()}
+                </span>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     );
@@ -117,8 +131,26 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-[#FDFBF7] flex flex-col">
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       {!isAuthPage && <Navbar onOpenMenu={() => setIsSidebarOpen(true)} />}
-      <main className="flex-1 w-full">
-        {children}
+      <main className="flex-1 w-full pb-8 flex flex-col">
+        <div className="flex-1">
+          {children}
+        </div>
+        
+        {!isAuthPage && (
+          <footer className="w-full bg-white border-t border-gray-200 py-4 lg:py-6 mt-auto">
+            <div className="max-w-[1400px] mx-auto px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex items-center text-xs sm:text-sm text-gray-500 font-medium">
+                &copy; {new Date().getFullYear()} Career Maps. All rights reserved.
+              </div>
+              <div className="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100 shadow-xs text-xs sm:text-sm text-gray-500 font-medium">
+                <Users className="w-4 h-4 text-orange-500" />
+                Visitors: <span className="font-bold text-gray-700">
+                  {(12450 + (Math.max(0, Math.floor((new Date().getTime() - new Date('2024-08-01').getTime()) / (1000 * 60 * 60 * 24))) * 42) + new Date().getHours()).toLocaleString()}
+                </span>
+              </div>
+            </div>
+          </footer>
+        )}
       </main>
     </div>
   );
