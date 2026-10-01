@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Building2, MapPin, Briefcase, Bookmark, Check, ArrowUpRight } from 'lucide-react';
+import { Building2, MapPin, Briefcase, Bookmark, Check, ArrowUpRight, X } from 'lucide-react';
 import { Job, apiRequest } from '../lib/api';
 import { useAuth } from '@/context/AuthContext';
 
@@ -11,9 +11,10 @@ interface JobCardProps {
   isForYou?: boolean;
   initialIsSaved?: boolean;
   onUnsave?: (jobId: string) => void;
+  onUnapply?: (jobId: string) => void;
 }
 
-export function JobCard({ job, isForYou, initialIsSaved = false, onUnsave }: JobCardProps) {
+export function JobCard({ job, isForYou, initialIsSaved = false, onUnsave, onUnapply }: JobCardProps) {
   const { isAuthenticated } = useAuth();
   const [isSaved, setIsSaved] = useState(initialIsSaved);
   const [logoError, setLogoError] = useState(false);
@@ -131,14 +132,34 @@ export function JobCard({ job, isForYou, initialIsSaved = false, onUnsave }: Job
           Verified Opening
         </span>
         
-        <Link 
-          href={`/jobs/${job.job_id}`}
-          className="inline-flex items-center gap-1 px-3 py-1 bg-orange-50 hover:bg-orange-100 text-orange-600 transition-colors rounded-lg font-bold text-xs group-hover:bg-orange-600 group-hover:text-white shadow-2xs"
-          onClick={(e) => e.stopPropagation()}
-        >
-          View Job
-          <ArrowUpRight className="w-3 h-3" />
-        </Link>
+        <div className="flex items-center gap-2">
+          {onUnapply && (
+            <button
+              onClick={async (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                try {
+                  await apiRequest(`/users/me/applied_jobs/${job.job_id}`, { method: 'DELETE' });
+                  onUnapply(job.job_id);
+                } catch (err) {
+                  console.error("Failed to un-apply", err);
+                }
+              }}
+              className="inline-flex items-center justify-center p-1.5 bg-red-50 hover:bg-red-100 text-red-600 transition-colors rounded-lg shadow-2xs"
+              title="Remove from Applied"
+            >
+              <X className="w-3 h-3" />
+            </button>
+          )}
+          <Link 
+            href={`/jobs/${job.job_id}`}
+            className="inline-flex items-center gap-1 px-3 py-1 bg-orange-50 hover:bg-orange-100 text-orange-600 transition-colors rounded-lg font-bold text-xs group-hover:bg-orange-600 group-hover:text-white shadow-2xs"
+            onClick={(e) => e.stopPropagation()}
+          >
+            View Job
+            <ArrowUpRight className="w-3 h-3" />
+          </Link>
+        </div>
       </div>
     </div>
   );

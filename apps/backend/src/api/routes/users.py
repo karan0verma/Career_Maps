@@ -180,6 +180,24 @@ def list_applied_jobs(
 ) -> Any:
     return db.query(AppliedJob).options(joinedload(AppliedJob.job).joinedload(Job.company)).filter(AppliedJob.user_id == current_user.user_id).order_by(AppliedJob.applied_at.desc()).offset(skip).limit(limit).all()
 
+@router.delete("/me/applied_jobs/{job_id}")
+def remove_applied_job(
+    *,
+    db: Session = Depends(deps.get_db),
+    job_id: UUID,
+    current_user: User = Depends(deps.get_current_active_user)
+) -> Any:
+    applied = db.query(AppliedJob).filter(
+        AppliedJob.user_id == current_user.user_id,
+        AppliedJob.job_id == job_id
+    ).first()
+    
+    if applied:
+        db.delete(applied)
+        db.commit()
+        
+    return {"message": "Job unmarked as applied"}
+
 @router.get("/me/viewed_jobs", response_model=List[ViewedJobWithCompanyDetails])
 def list_viewed_jobs(
     db: Session = Depends(deps.get_db),

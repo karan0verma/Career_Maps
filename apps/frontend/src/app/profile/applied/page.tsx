@@ -46,7 +46,13 @@ export default function SavedJobsPage() {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {savedJobs.map((item) => (
-            <JobCard key={item.job_id} job={item.job} />
+            <JobCard 
+              key={item.job_id} 
+              job={item.job} 
+              onUnapply={(jobId) => {
+                setSavedJobs(current => current.filter(j => j.job_id !== jobId));
+              }}
+            />
           ))}
         </div>
       )}
