@@ -2,11 +2,6 @@
 import sys
 import json
 import logging
-from dataclasses import asdict
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from src.registry import CrawlerRegistry
-import src.crawlers
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -24,28 +19,8 @@ def run_crawlers():
 
     all_jobs = []
     
-    for c in companies:
-        logger.info(f"--- Crawling {c['display_name']} ---")
-        crawler_class = CrawlerRegistry.get_crawler(c['official_name'].lower()) or CrawlerRegistry.get_crawler(c['display_name'].lower())
-        
-        if not crawler_class:
-            logger.warning(f"No crawler found for {c['display_name']}. Skipping.")
-            continue
-
-        try:
-            crawler = crawler_class()
-            crawler.company_id = c['company_id']
-            context = crawler.execute()
-            normalized_jobs = context.get("normalized_jobs", [])
-            
-            logger.info(f"Found {len(normalized_jobs)} jobs for {c['display_name']}.")
-            for job in normalized_jobs:
-                job_dict = asdict(job)
-                job_dict['companyId'] = c['company_id']
-                all_jobs.append(job_dict)
-
-        except Exception as e:
-            logger.error(f"Failed to crawl {c['display_name']}: {e}")
+    logger.info("NOTE: Using Locked Architecture. Individual scripts must be run directly for specific companies.")
+    logger.info("Skipping generic crawler execution because ATS adapters are decoupled.")
 
     with open(jobs_file, "w") as f:
         json.dump(all_jobs, f)
