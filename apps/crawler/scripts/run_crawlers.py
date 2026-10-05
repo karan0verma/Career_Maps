@@ -27,11 +27,12 @@ def run_crawlers():
         logger.info(f"--- Crawling {c['display_name']} with Universal Engine ---")
         
         try:
+            # BaseCrawler expects: id, companyName, officialCareerPage
             company_data = {
-                "company_id": c['company_id'],
+                "id": c['company_id'],
                 "companyName": c['display_name'],
                 "officialName": c['official_name'],
-                "careerUrl": c.get("career_url") or f"https://www.{c['official_name']}.com/careers",
+                "officialCareerPage": c.get("career_url") or f"https://www.{c['official_name']}.com/careers",
                 "website": c.get("website") or f"https://www.{c['official_name']}.com"
             }
             
