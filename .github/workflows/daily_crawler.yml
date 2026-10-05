@@ -2,9 +2,8 @@ name: Daily Crawler Sync
 
 on:
   schedule:
-    # Runs at 20:30 UTC every day (02:00 AM IST)
     - cron: '30 20 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+  workflow_dispatch:
 
 jobs:
   crawl:
@@ -24,13 +23,23 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r apps/backend/requirements.txt
         
+    - name: Export Active Companies
+      env:
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      run: |
+        python apps/backend/scripts/export_companies.py
+        
     - name: Install Crawler Dependencies
       run: |
         pip install -r apps/crawler/requirements.txt
         playwright install chromium --with-deps
         
-    - name: Run Daily Sync Script
+    - name: Run Crawlers
+      run: |
+        python apps/crawler/scripts/run_crawlers.py
+        
+    - name: Sync Jobs to Database
       env:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
       run: |
-        python apps/crawler/scripts/daily_sync.py
+        python apps/backend/scripts/sync_jobs.py
