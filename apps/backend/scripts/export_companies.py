@@ -15,7 +15,9 @@ def export_companies():
         data.append({
             "company_id": str(c.company_id),
             "official_name": c.official_name,
-            "display_name": c.display_name
+            "display_name": c.display_name,
+            "career_url": c.career_url,
+            "website": c.website
         })
         
     with open("active_companies.json", "w") as f:
